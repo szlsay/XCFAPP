@@ -1,0 +1,19 @@
+//
+//  XCF.pch
+//  XCFApp
+//
+//  Created by rkxt_ios on 15/12/1.
+//  Copyright © 2015年 ST. All rights reserved.
+//
+
+#ifndef XCF_pch
+#define XCF_pch
+
+
+#define ColorAlpha(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/1.0]
+#define Color(r, g, b)         ColorAlpha(r, g, b, 1)
+
+#define ScreenWidth  CGRectGetWidth([UIScreen mainScreen].bounds)
+#define ScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
+
+#endif /* XCF_pch */

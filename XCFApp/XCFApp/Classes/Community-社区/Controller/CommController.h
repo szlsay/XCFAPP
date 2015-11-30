@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CommController.h
 //  XCFApp
 //
 //  Created by rkxt_ios on 15/11/30.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CommController : UIViewController
 
 @end
-
