@@ -114,7 +114,6 @@
     return self.frame.origin;
 }
 
-
 - (UIView *(^)(UIColor *color)) setColor
 {
     return ^ (UIColor *color) {

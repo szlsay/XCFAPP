@@ -19,7 +19,7 @@
 		772E8D961C0C99EB006D42C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772E8D951C0C99EB006D42C8 /* Assets.xcassets */; };
 		772E8DA41C0C99EB006D42C8 /* XCFAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DA31C0C99EB006D42C8 /* XCFAppTests.m */; };
 		772E8DAF1C0C99EB006D42C8 /* XCFAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DAE1C0C99EB006D42C8 /* XCFAppUITests.m */; };
-		772E8DD01C0CA23E006D42C8 /* KitchenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DCF1C0CA23E006D42C8 /* KitchenController.m */; };
+		772E8DD01C0CA23E006D42C8 /* KCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DCF1C0CA23E006D42C8 /* KCController.m */; };
 		772E8DD61C0CA3AE006D42C8 /* XCFTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DD51C0CA3AE006D42C8 /* XCFTabController.m */; };
 		772E8DD91C0CA3D9006D42C8 /* XCFNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DD81C0CA3D9006D42C8 /* XCFNavController.m */; };
 		772E8DE21C0CA537006D42C8 /* MyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DE11C0CA537006D42C8 /* MyController.m */; };
@@ -27,6 +27,10 @@
 		772E8DE81C0CA570006D42C8 /* CommController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DE71C0CA570006D42C8 /* CommController.m */; };
 		7784A3211C0D2A2400BC6C56 /* UIBarButtonItem+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7784A3201C0D2A2400BC6C56 /* UIBarButtonItem+XCF.m */; };
 		7784A3241C0D2A9700BC6C56 /* UIView+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7784A3231C0D2A9700BC6C56 /* UIView+XCF.m */; };
+		778767021C0DD92600BD5243 /* XCFTab.json in Resources */ = {isa = PBXBuildFile; fileRef = 778767011C0DD92600BD5243 /* XCFTab.json */; };
+		778767051C0DEA8000BD5243 /* XCFBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 778767041C0DEA8000BD5243 /* XCFBarButtonItem.m */; };
+		778767081C0DF61300BD5243 /* KCCreateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778767071C0DF61300BD5243 /* KCCreateController.m */; };
+		7787670B1C0DFA5600BD5243 /* UIViewController+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7787670A1C0DFA5600BD5243 /* UIViewController+XCF.m */; };
 		77D61FC81C0D9011004441E9 /* XCFSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D61FC71C0D9011004441E9 /* XCFSearchBar.m */; };
 		77D61FD71C0DA342004441E9 /* UINavigationItem+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D61FD61C0DA342004441E9 /* UINavigationItem+XCF.m */; };
 		C5269E2C6D9BCB026B2116E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5F2A82BB67595263D09ED4 /* libPods.a */; };
@@ -76,8 +80,8 @@
 		772E8DAA1C0C99EB006D42C8 /* XCFAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCFAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		772E8DAE1C0C99EB006D42C8 /* XCFAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCFAppUITests.m; sourceTree = "<group>"; };
 		772E8DB01C0C99EB006D42C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		772E8DCE1C0CA23E006D42C8 /* KitchenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitchenController.h; sourceTree = "<group>"; };
-		772E8DCF1C0CA23E006D42C8 /* KitchenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KitchenController.m; sourceTree = "<group>"; };
+		772E8DCE1C0CA23E006D42C8 /* KCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCController.h; sourceTree = "<group>"; };
+		772E8DCF1C0CA23E006D42C8 /* KCController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCController.m; sourceTree = "<group>"; };
 		772E8DD41C0CA3AE006D42C8 /* XCFTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFTabController.h; sourceTree = "<group>"; };
 		772E8DD51C0CA3AE006D42C8 /* XCFTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFTabController.m; sourceTree = "<group>"; };
 		772E8DD71C0CA3D9006D42C8 /* XCFNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFNavController.h; sourceTree = "<group>"; };
@@ -93,6 +97,13 @@
 		7784A3201C0D2A2400BC6C56 /* UIBarButtonItem+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XCF.m"; sourceTree = "<group>"; };
 		7784A3221C0D2A9700BC6C56 /* UIView+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XCF.h"; sourceTree = "<group>"; };
 		7784A3231C0D2A9700BC6C56 /* UIView+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XCF.m"; sourceTree = "<group>"; };
+		778767011C0DD92600BD5243 /* XCFTab.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = XCFTab.json; sourceTree = "<group>"; };
+		778767031C0DEA8000BD5243 /* XCFBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFBarButtonItem.h; sourceTree = "<group>"; };
+		778767041C0DEA8000BD5243 /* XCFBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFBarButtonItem.m; sourceTree = "<group>"; };
+		778767061C0DF61300BD5243 /* KCCreateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCCreateController.h; sourceTree = "<group>"; };
+		778767071C0DF61300BD5243 /* KCCreateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCCreateController.m; sourceTree = "<group>"; };
+		778767091C0DFA5600BD5243 /* UIViewController+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XCF.h"; sourceTree = "<group>"; };
+		7787670A1C0DFA5600BD5243 /* UIViewController+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XCF.m"; sourceTree = "<group>"; };
 		77D61FC61C0D9011004441E9 /* XCFSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFSearchBar.h; sourceTree = "<group>"; };
 		77D61FC71C0D9011004441E9 /* XCFSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFSearchBar.m; sourceTree = "<group>"; };
 		77D61FD51C0DA342004441E9 /* UINavigationItem+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+XCF.h"; sourceTree = "<group>"; };
@@ -177,6 +188,7 @@
 				772E8DD81C0CA3D9006D42C8 /* XCFNavController.m */,
 				772E8DD41C0CA3AE006D42C8 /* XCFTabController.h */,
 				772E8DD51C0CA3AE006D42C8 /* XCFTabController.m */,
+				778767011C0DD92600BD5243 /* XCFTab.json */,
 				772E8DE91C0CABCA006D42C8 /* XCF.pch */,
 				772E8D951C0C99EB006D42C8 /* Assets.xcassets */,
 				772E8D9A1C0C99EB006D42C8 /* Info.plist */,
@@ -293,8 +305,10 @@
 		772E8DC61C0CA16C006D42C8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				772E8DCE1C0CA23E006D42C8 /* KitchenController.h */,
-				772E8DCF1C0CA23E006D42C8 /* KitchenController.m */,
+				772E8DCE1C0CA23E006D42C8 /* KCController.h */,
+				772E8DCF1C0CA23E006D42C8 /* KCController.m */,
+				778767061C0DF61300BD5243 /* KCCreateController.h */,
+				778767071C0DF61300BD5243 /* KCCreateController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -378,6 +392,8 @@
 				7784A3231C0D2A9700BC6C56 /* UIView+XCF.m */,
 				77D61FD51C0DA342004441E9 /* UINavigationItem+XCF.h */,
 				77D61FD61C0DA342004441E9 /* UINavigationItem+XCF.m */,
+				778767091C0DFA5600BD5243 /* UIViewController+XCF.h */,
+				7787670A1C0DFA5600BD5243 /* UIViewController+XCF.m */,
 			);
 			path = "Category-类别";
 			sourceTree = "<group>";
@@ -387,6 +403,8 @@
 			children = (
 				77D61FC61C0D9011004441E9 /* XCFSearchBar.h */,
 				77D61FC71C0D9011004441E9 /* XCFSearchBar.m */,
+				778767031C0DEA8000BD5243 /* XCFBarButtonItem.h */,
+				778767041C0DEA8000BD5243 /* XCFBarButtonItem.m */,
 			);
 			path = "Tool-工具";
 			sourceTree = "<group>";
@@ -510,6 +528,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				772E8D961C0C99EB006D42C8 /* Assets.xcassets in Resources */,
+				778767021C0DD92600BD5243 /* XCFTab.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,15 +610,18 @@
 				770D84BB1C0D52CE00A95584 /* KCItems.m in Sources */,
 				770D84B81C0D52CE00A95584 /* KCCursor.m in Sources */,
 				772E8DE81C0CA570006D42C8 /* CommController.m in Sources */,
+				778767081C0DF61300BD5243 /* KCCreateController.m in Sources */,
 				770D84B51C0D52CE00A95584 /* KC.m in Sources */,
 				77D61FD71C0DA342004441E9 /* UINavigationItem+XCF.m in Sources */,
 				770D84B71C0D52CE00A95584 /* KCContents.m in Sources */,
 				770D84B91C0D52CE00A95584 /* KCImage.m in Sources */,
 				770D84B61C0D52CE00A95584 /* KCContent.m in Sources */,
+				778767051C0DEA8000BD5243 /* XCFBarButtonItem.m in Sources */,
 				772E8DE21C0CA537006D42C8 /* MyController.m in Sources */,
 				772E8DD61C0CA3AE006D42C8 /* XCFTabController.m in Sources */,
 				772E8D8B1C0C99EB006D42C8 /* main.m in Sources */,
-				772E8DD01C0CA23E006D42C8 /* KitchenController.m in Sources */,
+				772E8DD01C0CA23E006D42C8 /* KCController.m in Sources */,
+				7787670B1C0DFA5600BD5243 /* UIViewController+XCF.m in Sources */,
 				770D84BA1C0D52CE00A95584 /* KCIssues.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

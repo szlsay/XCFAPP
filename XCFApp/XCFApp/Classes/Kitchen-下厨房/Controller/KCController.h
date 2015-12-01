@@ -1,5 +1,5 @@
 //
-//  KitchenController.h
+//  KCController.h
 //  XCFApp
 //
 //  Created by rkxt_ios on 15/11/30.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KitchenController : UIViewController
+@interface KCController : UIViewController
 
 @end

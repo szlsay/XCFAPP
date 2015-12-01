@@ -10,14 +10,7 @@
 #import "XCFNavController.h"
 @interface XCFTabController ()
 
-/**  1.tabbar名称集 */
-@property (nonatomic, strong, nonnull)NSArray *arrayTitle;
-/**  2.tabbar图片名称集 */
-@property (nonatomic, strong, nonnull)NSArray *arrayImgName;
-/**  3.tabbar图片选中名称集 */
-@property (nonatomic, strong, nonnull)NSArray *arrayImgSelName;
-/**  4.控制器名称集 */
-@property (nonatomic, strong, nonnull)NSArray *arrayController;
+@property (nonatomic, strong, nullable)NSArray *arrayTab; //
 
 @end
 
@@ -29,11 +22,11 @@
 {
     [super viewDidLoad];
     
-    for (int i = 0; i < self.arrayController.count; i++) {
-        [self addChildVc:self.arrayController[i]
-                   title:self.arrayTitle[i]
-                   image:self.arrayImgName[i]
-           selectedImage:self.arrayImgSelName[i]];
+    for (NSDictionary *dicTab in self.arrayTab) {
+        [self addChildVc:dicTab[@"controllerName"]
+                   title:dicTab[@"title"]
+                   image:dicTab[@"imageName"]
+           selectedImage:dicTab[@"imageSelectName"]];
     }
 }
 
@@ -56,9 +49,10 @@
              image:(NSString *)image
      selectedImage:(NSString *)selectedImage
 {
-    // 1.设置子控制器的文字
+    // 1.设置子控制器的默认设置
     UIViewController *childVc = [NSClassFromString(childName) new];
     childVc.title = title; // 同时设置tabbar和navigationBar的文字
+    [childVc.view setBackgroundColor:Color(247, 247, 240)];
     
     // 2.设置子控制器的图片
     childVc.tabBarItem.image = [[UIImage imageNamed:image] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -80,24 +74,19 @@
 }
 #pragma mark - getters and setters 属性
 
-// TODO 数据没有封装，可以放到plist或Json文件中
-- (NSArray *)arrayTitle
+- (NSArray *)arrayTab
 {
-    return @[@"下厨房", @"市集", @"社区", @"我"];
-}
-
-- (NSArray *)arrayImgName
-{
-    return @[@"tabADeselected", @"tabBDeselected", @"tabCDeselected",@"tabDDeselected"];
-}
-
-- (NSArray *)arrayImgSelName
-{
-    return @[@"tabASelected", @"tabBSelected", @"tabCSelected", @"tabDSelected"];
-}
-
-- (NSArray *)arrayController
-{
-    return @[@"KitchenController", @"BazController", @"CommController", @"MyController"];
+    if (!_arrayTab) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"XCFTab"
+                                                         ofType:@"json"];
+        
+        NSData *jsonData = [NSData dataWithContentsOfFile:path
+                                                  options:NSDataReadingMappedIfSafe
+                                                    error:nil];
+        
+        _arrayTab = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:nil];
+        
+    }
+    return _arrayTab;
 }
 @end

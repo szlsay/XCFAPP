@@ -1,0 +1,12 @@
+[
+ {"title" : "下厨房", "imageName" : "tabADeselected", "imageSelectName" : "tabASelected",
+ "controllerName"  :"KCController"},
+ 
+ {"title" : "市集", "imageName" : "tabBDeselected", "imageSelectName" : "tabBSelected",
+ "controllerName" : "BazController"},
+ 
+ {"title" : "社区", "imageName" : "tabBDeselected", "imageSelectName" : "tabCSelected",
+ "controllerName" : "CommController"},
+ 
+ {"title" : "我", "imageName" : "tabDDeselected", "imageSelectName" : "tabDSelected",
+ "controllerName" : "MyController"}]

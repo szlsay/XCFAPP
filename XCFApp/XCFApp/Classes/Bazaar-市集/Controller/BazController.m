@@ -20,8 +20,6 @@
 {
     [super viewDidLoad];
     
-    [self.view setBackgroundColor:Color(247, 247, 240)];
-    
     XCFSearchBar *searchBar = [XCFSearchBar searchBarWithPlaceholder:@"搜索商品"];
     [self.navigationItem setTitleView:searchBar];
 }

@@ -20,7 +20,6 @@
 {
     [super viewDidLoad];
     
-    [self.view setBackgroundColor:[UIColor grayColor]];
 }
 
 #pragma mark - Delegate 视图委托
