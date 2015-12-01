@@ -29,47 +29,46 @@
 {
     [super viewDidLoad];
     
-//    for (NSString *strController in self.arrayController) {
-//        UIViewController *vc = [[NSClassFromString(strController) alloc]init];
-//    }
-    
     for (int i = 0; i < self.arrayController.count; i++) {
-        UIViewController *vc = [NSClassFromString(self.arrayController[i]) new];
-        
-        [self addChildVc:vc
+        [self addChildVc:self.arrayController[i]
                    title:self.arrayTitle[i]
                    image:self.arrayImgName[i]
            selectedImage:self.arrayImgSelName[i]];
     }
 }
 
+#pragma mark - Delegate 视图委托
+
+#pragma mark - event response 事件相应
+
+#pragma mark - private methods 私有方法
+
 /**
- *  添加一个子控制器
+ *  1.添加一个子控制器
  *
- *  @param childVc       子控制器
+ *  @param childName     子控制器名称
  *  @param title         标题
  *  @param image         图片
  *  @param selectedImage 选中的图片
  */
-- (void)addChildVc:(UIViewController *)childVc
+- (void)addChildVc:(NSString *)childName
              title:(NSString *)title
              image:(NSString *)image
      selectedImage:(NSString *)selectedImage
 {
     // 1.设置子控制器的文字
+    UIViewController *childVc = [NSClassFromString(childName) new];
     childVc.title = title; // 同时设置tabbar和navigationBar的文字
     
     // 2.设置子控制器的图片
     childVc.tabBarItem.image = [[UIImage imageNamed:image] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     childVc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    // 3.设置文字的样式
+    // 3.设置文字的样式  !!! 颜色需要提出来
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
     textAttrs[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
     NSMutableDictionary *selectTextAttrs = [NSMutableDictionary dictionary];
     
-    
-    // !!! 颜色需要提出来
     selectTextAttrs[NSForegroundColorAttributeName] = Color(249, 123, 104);
     [childVc.tabBarItem setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
     [childVc.tabBarItem setTitleTextAttributes:selectTextAttrs forState:UIControlStateSelected];
@@ -79,16 +78,9 @@
     // 5.添加为子控制器
     [self addChildViewController:nav];
 }
-#pragma mark - Delegate 视图委托
-
-#pragma mark - event response 事件相应
-
-#pragma mark - private methods 私有方法
-
 #pragma mark - getters and setters 属性
 
 // TODO 数据没有封装，可以放到plist或Json文件中
-
 - (NSArray *)arrayTitle
 {
     return @[@"下厨房", @"市集", @"社区", @"我"];
