@@ -9,10 +9,12 @@
 #import "KCCreateController.h"
 
 @interface KCCreateController ()
+
 /** 1.中间的标题 */
 @property (nonatomic, strong, nullable)UILabel *labelContent;
 /** 2.输入框 */
-@property (nonatomic, strong, nullable)UITextField *textField; //
+@property (nonatomic, strong, nullable)UITextField *textField;
+
 @end
 
 @implementation KCCreateController

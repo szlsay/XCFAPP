@@ -22,7 +22,7 @@
 {
     [super loadView];
     
-    [self.navigationBar setBarTintColor:[UIColor whiteColor]];
+    [self.navigationBar setBarTintColor:[XCFColor colorNavigationBar]];
 }
 #pragma mark - Delegate 视图委托
 
@@ -40,7 +40,7 @@
 {
     // 1.设置TabBar的隐藏和控制器的背景色
     self.edgesForExtendedLayout  = UIRectEdgeNone;
-    [viewController.view setBackgroundColor:Color(247, 247, 240)];
+    [viewController.view setBackgroundColor:[XCFColor colorControllerBackground]];
     
     // 2.设置视图
     if (self.viewControllers.count > 0) {
@@ -50,7 +50,7 @@
         
         // 2.设置左边的Item
         viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self
-                                                                                   action:@selector(backVC)
+                                                                                    action:@selector(backVC)
                                                                                     image:@"backStretchBackgroundNormal"
                                                                                 highImage:@"backStretchBackgroundNormal"];
     }

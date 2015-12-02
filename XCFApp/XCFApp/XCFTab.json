@@ -5,7 +5,7 @@
  {"title" : "市集", "imageName" : "tabBDeselected", "imageSelectName" : "tabBSelected",
  "controllerName" : "BazController"},
  
- {"title" : "社区", "imageName" : "tabBDeselected", "imageSelectName" : "tabCSelected",
+ {"title" : "社区", "imageName" : "tabCDeselected", "imageSelectName" : "tabCSelected",
  "controllerName" : "CommController"},
  
  {"title" : "我", "imageName" : "tabDDeselected", "imageSelectName" : "tabDSelected",

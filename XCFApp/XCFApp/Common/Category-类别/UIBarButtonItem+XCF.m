@@ -25,7 +25,7 @@
                           highImage:(NSString *)highImage
 {
     // 1.初始化按钮
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 40, 22)];
     [btn addTarget:target
             action:action
   forControlEvents:UIControlEventTouchUpInside];
@@ -37,7 +37,7 @@
          forState:UIControlStateHighlighted];
     
     // 3.设置尺寸
-    btn.size = btn.currentImage.size;
+//    btn.size = btn.currentImage.size;
     return [[UIBarButtonItem alloc] initWithCustomView:btn];
 }
 @end

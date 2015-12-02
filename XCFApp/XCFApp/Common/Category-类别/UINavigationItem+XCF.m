@@ -12,6 +12,8 @@ static const CGFloat NavigationItemMargin = 6;
 
 @implementation UINavigationItem (XCF)
 
+// TODO: UINavigationItem方法需要改进
+
 - (void)setLeftBarButtonItem:(UIBarButtonItem *)leftBarButtonItem
 {
     UIBarButtonItem *negativeSeperator = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];

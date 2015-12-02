@@ -9,9 +9,7 @@
 #import "XCFTabController.h"
 #import "XCFNavController.h"
 @interface XCFTabController ()
-
-@property (nonatomic, strong, nullable)NSArray *arrayTab; //
-
+@property (nonatomic, strong, nonnull)NSArray *arrayTab;
 @end
 
 @implementation XCFTabController
@@ -22,7 +20,7 @@
 {
     [super viewDidLoad];
     
-    for (NSDictionary *dicTab in self.arrayTab) {
+    for (NSDictionary<NSString *, NSString *> *dicTab in self.arrayTab) {
         [self addChildVc:dicTab[@"controllerName"]
                    title:dicTab[@"title"]
                    image:dicTab[@"imageName"]
@@ -52,18 +50,18 @@
     // 1.设置子控制器的默认设置
     UIViewController *childVc = [NSClassFromString(childName) new];
     childVc.title = title; // 同时设置tabbar和navigationBar的文字
-    [childVc.view setBackgroundColor:Color(247, 247, 240)];
+    [childVc.view setBackgroundColor:[XCFColor colorControllerBackground]];
     
     // 2.设置子控制器的图片
     childVc.tabBarItem.image = [[UIImage imageNamed:image] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     childVc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    // 3.设置文字的样式  !!! 颜色需要提出来
+    // 3.设置文字的样式
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
-    textAttrs[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+    textAttrs[NSForegroundColorAttributeName] = [XCFColor colorTabbarNormal];
     NSMutableDictionary *selectTextAttrs = [NSMutableDictionary dictionary];
     
-    selectTextAttrs[NSForegroundColorAttributeName] = Color(249, 123, 104);
+    selectTextAttrs[NSForegroundColorAttributeName] = [XCFColor colorTabbarSelected];
     [childVc.tabBarItem setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
     [childVc.tabBarItem setTitleTextAttributes:selectTextAttrs forState:UIControlStateSelected];
     

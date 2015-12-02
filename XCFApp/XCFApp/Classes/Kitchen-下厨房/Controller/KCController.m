@@ -17,6 +17,7 @@
 #import "XCFBarButtonItem.h"
 
 #import "KCCreateController.h"
+
 @interface KCController ()
 
 @end
@@ -70,7 +71,7 @@
     
     // 2.添加导航按钮
     self.navigationItem.leftBarButtonItem = [XCFBarButtonItem barButtonItemWithImageName:@"homepageCreateRecipeButton"
-                                                                                  target:self
+                                                                                     target:self
                                                                                   action:@selector(gotoVC)];
     
     self.navigationItem.rightBarButtonItem = [XCFBarButtonItem barButtonItemWithImageName:@"buylistButtonImage"
