@@ -8,10 +8,12 @@
 
 #import "LoginMainController.h"
 
-@interface LoginMainController ()
+@interface LoginMainController ()<UITextFieldDelegate>
 @property (nonatomic, strong, nullable)XCFTextField *textFieldAccount; //
 @property (nonatomic, strong, nullable)XCFTextField *textFieldKey; //
 @property (nonatomic, strong, nullable)UIButton *buttonLogin; //
+
+@property (nonatomic, strong, nullable)CALayer *buttonLayer; //
 
 @end
 
@@ -29,11 +31,58 @@
 
 #pragma mark - Delegate 视图委托
 
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    return YES;
+}
+
 #pragma mark - event response 事件相应
 
 - (void)backLoginVC
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    if (textField.text.length > 5) {
+        return NO;
+    }else {
+        return YES;
+    }
+}
+
+
+
+- (void)textFieldDidChange:(UITextField *)textField
+{
+   
+    CGRect loginFrame = self.buttonLogin.bounds;
+    
+    CGFloat length = self.buttonLogin.frame.size.width;
+    
+    CGFloat smallWidth = length / 11;
+    
+    loginFrame.origin.x += smallWidth * textField.text.length;
+    
+    loginFrame.size.width -= smallWidth * textField.text.length;
+    
+    self.buttonLayer.frame = loginFrame;
+    
+    
+    if (textField.text.length == 11) {
+        [textField resignFirstResponder];
+        [self.buttonLogin setEnabled:YES];
+    }else {
+        [self.buttonLogin setEnabled:NO];
+    }
+}
+
+
+- (void)login
+{
+    NSLog(@"%s, %@", __FUNCTION__, self);
 }
 #pragma mark - private methods 私有方法
 
@@ -55,6 +104,10 @@
     [self.view addSubview:self.textFieldAccount];
     [self.view addSubview:self.textFieldKey];
     [self.view addSubview:self.buttonLogin];
+    
+    self.buttonLayer.frame = self.buttonLogin.bounds;
+    [self.buttonLogin.layer addSublayer:self.buttonLayer];
+    
 }
 
 #pragma mark - getters and setters 属性
@@ -67,6 +120,11 @@
                                                                         XCFControlSystemHeight)
                                                  placeholder:@"手机号"];
         [_textFieldAccount setKeyboardType:UIKeyboardTypeNumberPad];
+        [_textFieldAccount setDelegate:self];
+        [_textFieldAccount addTarget:self
+                              action:@selector(textFieldDidChange:)
+                    forControlEvents:UIControlEventEditingChanged];
+        [_textFieldAccount setClearButtonMode:UITextFieldViewModeAlways];
         
     }
     return _textFieldAccount;
@@ -94,13 +152,28 @@
                                                             loginY,
                                                             ScreenWidth - 2*XCFMargin,
                                                             XCFControlSystemHeight)
-                                 backgroundColor:RGB(249, 175, 160)
+                                 backgroundColor:[XCFColor colorRedText]
                                            title:@"登录"
                                       titleColor:[UIColor whiteColor]
                                         fontSize:15];
         [_buttonLogin.layer setCornerRadius:4];
+        [_buttonLogin setEnabled:NO];
+        
+        [_buttonLogin addTarget:self
+                         action:@selector(login)
+               forControlEvents:UIControlEventTouchUpInside];
     }
     return _buttonLogin;
 }
 
+
+- (CALayer *)buttonLayer
+{
+    if (!_buttonLayer) {
+        _buttonLayer = [CALayer layer];
+        _buttonLayer.backgroundColor = RGBA(249, 175, 160, 0.3).CGColor;
+        _buttonLayer.cornerRadius = 4;
+    }
+    return _buttonLayer;
+}
 @end
