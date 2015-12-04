@@ -20,7 +20,7 @@
     [self setupUI];
     
     
-    [self addUmeng];
+    [self setUmeng];
     
     return YES;
 }
@@ -33,7 +33,7 @@
 }
 
 
-- (void)addUmeng
+- (void)setUmeng
 {
     // 1.appkey填写,BATCH（启动时发送）
     [MobClick startWithAppkey:AppkeyUmeng
@@ -45,6 +45,12 @@
     
     // 3.账号统计
 //    [MobClick profileSignInWithPUID:@"" provider:@""];
+    
+    
+    // 4.设置社会化AppKey
+    [UMSocialData setAppKey:AppkeyUmeng];
+    
+    // 5.
 }
 
 

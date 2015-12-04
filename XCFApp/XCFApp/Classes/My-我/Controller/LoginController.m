@@ -8,6 +8,9 @@
 
 #import "LoginController.h"
 
+#import "XCFNavController.h"
+#import "LoginMainController.h"
+
 @interface LoginController ()
 @property (nonatomic, strong, nullable)UIImageView *imageLogo; //
 @property (nonatomic, strong, nullable)UIButton    *buttonCancel; //
@@ -34,6 +37,17 @@
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (void)gotoLoginMainVC
+{
+    
+    XCFNavController *nav = [[XCFNavController alloc]initWithRootViewController:[LoginMainController new]];
+    [self presentViewController:nav
+                       animated:YES
+                     completion:nil];
+    
+    
+}
 #pragma mark - private methods 私有方法
 
 - (void)setupUI
@@ -53,7 +67,7 @@
     [self.view addSubview:self.buttonLogin];
     
     self.buttonRegister.centerX = self.view.centerX;
-    self.buttonRegister.centerY = ScreenHeight - 50;
+    self.buttonRegister.centerY = ScreenHeight - 40;
     [self.view addSubview:self.buttonRegister];
 }
 
@@ -95,12 +109,15 @@
         _buttonLogin = [UIButton buttonWithFrame:CGRectMake(0,
                                                             0,
                                                             ScreenWidth-XCFControlNormalHeight,
-                                                            XCFControlNormalHeight)
+                                                            XCFControlSystemHeight)
                                     backgroundColor:RGB(249, 102, 80)
                                               title:@"登录"
                                          titleColor:[UIColor whiteColor]
                                            fontSize:14];
         [_buttonLogin.layer setCornerRadius:4];
+        [_buttonLogin addTarget:self
+                         action:@selector(gotoLoginMainVC)
+               forControlEvents:UIControlEventTouchUpInside];
     }
     return _buttonLogin;
 }
@@ -111,7 +128,7 @@
         _buttonRegister = [UIButton buttonWithFrame:CGRectMake(0,
                                                                0,
                                                                ScreenWidth-XCFControlNormalHeight,
-                                                               XCFControlNormalHeight)
+                                                               XCFControlSystemHeight)
                                     backgroundColor:RGB(114, 163, 211)
                                               title:@"手机注册"
                                          titleColor:[UIColor whiteColor]

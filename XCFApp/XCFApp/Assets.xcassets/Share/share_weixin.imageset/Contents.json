@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "share_weixin.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "share_weixin.png",
       "scale" : "2x"
     },
     {

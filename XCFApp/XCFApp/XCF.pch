@@ -21,6 +21,7 @@
 #pragma mark - 工具文件
 #import "XCFColor.h"
 #import "XCFBarButtonItem.h"
+#import "XCFTextField.h"
 
 #pragma mark - 类别文件
 #import "UILabel+XCF.h"
@@ -32,5 +33,7 @@
 #import <AFNetworking.h>
 #import <MJExtension.h>
 #import <MobClick.h>
+#import <UMSocial.h>
+
 
 #endif /* XCF_pch */

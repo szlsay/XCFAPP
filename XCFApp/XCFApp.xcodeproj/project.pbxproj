@@ -14,6 +14,8 @@
 		770D84B91C0D52CE00A95584 /* KCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D84B01C0D52CE00A95584 /* KCImage.m */; };
 		770D84BA1C0D52CE00A95584 /* KCIssues.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D84B21C0D52CE00A95584 /* KCIssues.m */; };
 		770D84BB1C0D52CE00A95584 /* KCItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D84B41C0D52CE00A95584 /* KCItems.m */; };
+		77228FB61C11584800CBB493 /* LoginMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77228FB51C11584800CBB493 /* LoginMainController.m */; };
+		77228FB91C1161F600CBB493 /* XCFTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 77228FB81C1161F600CBB493 /* XCFTextField.m */; };
 		772E8D8B1C0C99EB006D42C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8D8A1C0C99EB006D42C8 /* main.m */; };
 		772E8D8E1C0C99EB006D42C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8D8D1C0C99EB006D42C8 /* AppDelegate.m */; };
 		772E8D961C0C99EB006D42C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772E8D951C0C99EB006D42C8 /* Assets.xcassets */; };
@@ -75,6 +77,10 @@
 		770D84B21C0D52CE00A95584 /* KCIssues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCIssues.m; sourceTree = "<group>"; };
 		770D84B31C0D52CE00A95584 /* KCItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCItems.h; sourceTree = "<group>"; };
 		770D84B41C0D52CE00A95584 /* KCItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCItems.m; sourceTree = "<group>"; };
+		77228FB41C11584800CBB493 /* LoginMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginMainController.h; sourceTree = "<group>"; };
+		77228FB51C11584800CBB493 /* LoginMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginMainController.m; sourceTree = "<group>"; };
+		77228FB71C1161F600CBB493 /* XCFTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFTextField.h; sourceTree = "<group>"; };
+		77228FB81C1161F600CBB493 /* XCFTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFTextField.m; sourceTree = "<group>"; };
 		772E8D861C0C99EB006D42C8 /* XCFApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCFApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		772E8D8A1C0C99EB006D42C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		772E8D8C1C0C99EB006D42C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -386,6 +392,8 @@
 				772E8DE11C0CA537006D42C8 /* MyController.m */,
 				779B927D1C1092DE00D9BAFF /* LoginController.h */,
 				779B927E1C1092DE00D9BAFF /* LoginController.m */,
+				77228FB41C11584800CBB493 /* LoginMainController.h */,
+				77228FB51C11584800CBB493 /* LoginMainController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -456,6 +464,8 @@
 				778767041C0DEA8000BD5243 /* XCFBarButtonItem.m */,
 				7744D2111C0E7C8600C97F85 /* XCFColor.h */,
 				7744D2121C0E7C8600C97F85 /* XCFColor.m */,
+				77228FB71C1161F600CBB493 /* XCFTextField.h */,
+				77228FB81C1161F600CBB493 /* XCFTextField.m */,
 			);
 			path = "Tool-工具";
 			sourceTree = "<group>";
@@ -652,6 +662,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77228FB91C1161F600CBB493 /* XCFTextField.m in Sources */,
 				7784A3241C0D2A9700BC6C56 /* UIView+XCF.m in Sources */,
 				7744D2161C0E7DA200C97F85 /* UIColor+XCF.m in Sources */,
 				772E8DD91C0CA3D9006D42C8 /* XCFNavController.m in Sources */,
@@ -668,6 +679,7 @@
 				777217551C1130C4002A4F79 /* ConfigInfo.m in Sources */,
 				778767081C0DF61300BD5243 /* KCCreateController.m in Sources */,
 				770D84B51C0D52CE00A95584 /* KC.m in Sources */,
+				77228FB61C11584800CBB493 /* LoginMainController.m in Sources */,
 				77D61FD71C0DA342004441E9 /* UINavigationItem+XCF.m in Sources */,
 				770D84B71C0D52CE00A95584 /* KCContents.m in Sources */,
 				770D84B91C0D52CE00A95584 /* KCImage.m in Sources */,
@@ -804,6 +816,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = XCFApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -818,6 +832,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = XCFApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
