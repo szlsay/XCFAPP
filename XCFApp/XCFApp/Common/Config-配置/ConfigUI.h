@@ -6,7 +6,8 @@
 //  Copyright © 2015年 ST. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+@import UIKit;
 
 /** 1.统一的间距 */
 UIKIT_EXTERN CGFloat const XCFMargin;

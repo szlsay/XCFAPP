@@ -6,7 +6,7 @@
 //  Copyright © 2015年 ST. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
+@import Foundation;
+@import UIKit;
 /** 1.友盟的AppKey */
 UIKIT_EXTERN NSString *const AppkeyUmeng;

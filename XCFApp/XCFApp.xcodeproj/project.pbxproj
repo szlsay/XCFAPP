@@ -168,6 +168,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		77228FB31C11401500CBB493 /* Lib-第三方库 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Lib-第三方库";
+			sourceTree = "<group>";
+		};
 		772E8D7D1C0C99EA006D42C8 = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +407,7 @@
 		772E8DCD1C0CA16C006D42C8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				77228FB31C11401500CBB493 /* Lib-第三方库 */,
 				777217511C113066002A4F79 /* Config-配置 */,
 				77D61FBF1C0D78CC004441E9 /* Tool-工具 */,
 				7784A31E1C0D29B100BC6C56 /* Category-类别 */,

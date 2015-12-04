@@ -9,25 +9,28 @@
 #ifndef XCF_pch
 #define XCF_pch
 
-
-#define ColorAlpha(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/1.0]
-#define Color(r, g, b)         ColorAlpha(r, g, b, 1)
-
 #define ScreenWidth  CGRectGetWidth([UIScreen mainScreen].bounds)
 #define ScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
 
+#define APPVERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
-#import "UIView+XCF.h"
-#import "UIColor+XCF.h"
-#import "XCFColor.h"
-#import "XCFBarButtonItem.h"
-#import <AFNetworking.h>
-
-#import <MJExtension.h>
-
-#import "UILabel+XCF.h"
-#import "UIButton+XCF.h"
-
+#pragma mark - 配置文件
 #import "ConfigInfo.h"
 #import "ConfigUI.h"
+
+#pragma mark - 工具文件
+#import "XCFColor.h"
+#import "XCFBarButtonItem.h"
+
+#pragma mark - 类别文件
+#import "UILabel+XCF.h"
+#import "UIButton+XCF.h"
+#import "UIView+XCF.h"
+#import "UIColor+XCF.h"
+
+#pragma mark - Pod添加文件
+#import <AFNetworking.h>
+#import <MJExtension.h>
+#import <MobClick.h>
+
 #endif /* XCF_pch */

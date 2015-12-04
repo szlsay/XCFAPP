@@ -19,6 +19,9 @@
     
     [self setupUI];
     
+    
+    [self addUmeng];
+    
     return YES;
 }
 
@@ -28,5 +31,23 @@
     self.window.rootViewController = [XCFTabController new];
     [self.window makeKeyAndVisible];
 }
+
+
+- (void)addUmeng
+{
+    // 1.appkey填写,BATCH（启动时发送）
+    [MobClick startWithAppkey:AppkeyUmeng
+                 reportPolicy:BATCH
+                    channelId:nil];
+    
+    // 2.version标识
+    [MobClick setAppVersion:APPVERSION];
+    
+    // 3.账号统计
+//    [MobClick profileSignInWithPUID:@"" provider:@""];
+}
+
+
+
 
 @end

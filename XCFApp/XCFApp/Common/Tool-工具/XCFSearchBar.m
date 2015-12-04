@@ -29,7 +29,7 @@
     for (UIView *subView in searchBarSub.subviews) {
         
         if ([subView isKindOfClass:NSClassFromString(@"UISearchBarTextField")]) {
-            [subView setBackgroundColor:Color(247, 247, 240)];
+            [subView setBackgroundColor:RGB(247, 247, 240)];
         }
         
         if ([subView isKindOfClass:NSClassFromString(@"UISearchBarBackground")]) {

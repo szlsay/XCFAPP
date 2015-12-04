@@ -49,7 +49,7 @@ static const CGFloat NavigationItemMargin = 6;
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 0, 44)];
     [label setText:title];
     [label setFont:[UIFont systemFontOfSize:16]];
-    [label setTextColor:Color(56, 56, 49)];
+    [label setTextColor:RGB(56, 56, 49)];
     self.titleView = label;
 }
 

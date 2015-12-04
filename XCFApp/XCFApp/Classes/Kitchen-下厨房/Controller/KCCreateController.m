@@ -55,7 +55,7 @@
     if (!_labelContent) {
         _labelContent = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 21)];
         [_labelContent setText:@"创建菜谱的人是厨房里的天使"];
-        [_labelContent setTextColor:Color(109, 96, 90)];
+        [_labelContent setTextColor:RGB(109, 96, 90)];
         [_labelContent setTextAlignment:NSTextAlignmentCenter];
         [_labelContent setFont:[UIFont systemFontOfSize:17]];
     }
