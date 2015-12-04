@@ -12,4 +12,8 @@
 + (XCFBarButtonItem *)barButtonItemWithImageName:(NSString *)imageName
                                           target:(id)target
                                           action:(SEL)action;
+
++ (XCFBarButtonItem *)barButtonItemWithTitle:(NSString *)title
+                                      target:(id)target
+                                      action:(SEL)action;
 @end

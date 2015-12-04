@@ -8,7 +8,8 @@
 
 #import "XCFTabController.h"
 #import "XCFNavController.h"
-@interface XCFTabController ()
+#import "LoginController.h"
+@interface XCFTabController ()<UITabBarControllerDelegate>
 @property (nonatomic, strong, nonnull)NSArray *arrayTab;
 @end
 
@@ -26,11 +27,29 @@
                    image:dicTab[@"imageName"]
            selectedImage:dicTab[@"imageSelectName"]];
     }
+    
+    self.delegate = self;
 }
 
 #pragma mark - Delegate 视图委托
 
 #pragma mark - event response 事件相应
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController
+shouldSelectViewController:(UIViewController *)viewController
+{
+    UINavigationController *navVC = (UINavigationController *)viewController;
+    if ([navVC.viewControllers[0].title isEqualToString:@"我"]) {
+        
+        [self presentViewController:[LoginController new]
+                           animated:YES
+                         completion:nil];
+        
+        return NO;
+    }else {
+        return YES;
+    }
+}
 
 #pragma mark - private methods 私有方法
 
@@ -87,4 +106,7 @@
     }
     return _arrayTab;
 }
+
+
+
 @end

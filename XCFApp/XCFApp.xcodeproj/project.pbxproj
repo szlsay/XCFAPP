@@ -34,6 +34,7 @@
 		778767051C0DEA8000BD5243 /* XCFBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 778767041C0DEA8000BD5243 /* XCFBarButtonItem.m */; };
 		778767081C0DF61300BD5243 /* KCCreateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778767071C0DF61300BD5243 /* KCCreateController.m */; };
 		7787670B1C0DFA5600BD5243 /* UIViewController+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7787670A1C0DFA5600BD5243 /* UIViewController+XCF.m */; };
+		779B927F1C1092DE00D9BAFF /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779B927E1C1092DE00D9BAFF /* LoginController.m */; };
 		77D61FC81C0D9011004441E9 /* XCFSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D61FC71C0D9011004441E9 /* XCFSearchBar.m */; };
 		77D61FD71C0DA342004441E9 /* UINavigationItem+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D61FD61C0DA342004441E9 /* UINavigationItem+XCF.m */; };
 		C5269E2C6D9BCB026B2116E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5F2A82BB67595263D09ED4 /* libPods.a */; };
@@ -113,6 +114,8 @@
 		778767071C0DF61300BD5243 /* KCCreateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCCreateController.m; sourceTree = "<group>"; };
 		778767091C0DFA5600BD5243 /* UIViewController+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XCF.h"; sourceTree = "<group>"; };
 		7787670A1C0DFA5600BD5243 /* UIViewController+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XCF.m"; sourceTree = "<group>"; };
+		779B927D1C1092DE00D9BAFF /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		779B927E1C1092DE00D9BAFF /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		77D61FC61C0D9011004441E9 /* XCFSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFSearchBar.h; sourceTree = "<group>"; };
 		77D61FC71C0D9011004441E9 /* XCFSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFSearchBar.m; sourceTree = "<group>"; };
 		77D61FD51C0DA342004441E9 /* UINavigationItem+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+XCF.h"; sourceTree = "<group>"; };
@@ -365,6 +368,8 @@
 			children = (
 				772E8DE01C0CA537006D42C8 /* MyController.h */,
 				772E8DE11C0CA537006D42C8 /* MyController.m */,
+				779B927D1C1092DE00D9BAFF /* LoginController.h */,
+				779B927E1C1092DE00D9BAFF /* LoginController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -635,6 +640,7 @@
 				770D84B91C0D52CE00A95584 /* KCImage.m in Sources */,
 				770D84B61C0D52CE00A95584 /* KCContent.m in Sources */,
 				778767051C0DEA8000BD5243 /* XCFBarButtonItem.m in Sources */,
+				779B927F1C1092DE00D9BAFF /* LoginController.m in Sources */,
 				772E8DE21C0CA537006D42C8 /* MyController.m in Sources */,
 				772E8DD61C0CA3AE006D42C8 /* XCFTabController.m in Sources */,
 				772E8D8B1C0C99EB006D42C8 /* main.m in Sources */,
@@ -765,7 +771,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = XCFApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shentian.XCFApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -779,7 +785,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = XCFApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shentian.XCFApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

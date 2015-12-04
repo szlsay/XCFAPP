@@ -20,7 +20,10 @@
 #import "UIView+XCF.h"
 #import "UIColor+XCF.h"
 #import "XCFColor.h"
+#import "XCFBarButtonItem.h"
 #import <AFNetworking.h>
 
 #import <MJExtension.h>
+
+#import "UILabel+XCF.h"
 #endif /* XCF_pch */

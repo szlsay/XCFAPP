@@ -30,4 +30,14 @@
     return RGB(249, 123, 104);
 }
 
++ (UIColor *)colorFlashLine
+{
+    return RGB(192, 192, 192);
+}
+
++ (UIColor *)colorRedText
+{
+    return RGB(249, 112, 92);
+}
+
 @end

@@ -21,7 +21,7 @@
                   state:UIControlStateNormal];
     
     // 3.设置占位符字和闪烁条的颜色
-    [searchBar setTintColor:Color(192, 192, 192)];
+    [searchBar setTintColor:[XCFColor colorFlashLine]];
     searchBar.placeholder = placeholder;
     
     // 4.设置背景色

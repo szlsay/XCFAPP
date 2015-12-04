@@ -29,4 +29,18 @@
  *  4.TabBar字体的选中色
  */
 + (UIColor *)colorTabbarSelected;
+
+/**
+ *  5.搜索框和输入框的闪烁线的颜色
+ *
+ *  @return <#return value description#>
+ */
++ (UIColor *)colorFlashLine;
+
+/**
+ *  6.默认红色的字体色
+ *
+ *  @return <#return value description#>
+ */
++ (UIColor *)colorRedText;
 @end
