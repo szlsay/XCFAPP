@@ -74,5 +74,14 @@
  */
 - (UIView *(^)(NSInteger tag)) setTag;
 
+
+
+/**
+ *  1.设置边框
+ */
+- (void)setBordersWithColor:(UIColor *)color
+               cornerRadius:(CGFloat)cornerRadius
+                borderWidth:(CGFloat)borderWidth;
+
 @end
 

@@ -35,6 +35,8 @@
 
 #pragma mark - event response 事件相应
 
+// TODO 最好使用RAC，这里使用的控制器的标题
+
 - (BOOL)tabBarController:(UITabBarController *)tabBarController
 shouldSelectViewController:(UIViewController *)viewController
 {

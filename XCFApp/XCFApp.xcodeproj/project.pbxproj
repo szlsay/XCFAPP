@@ -28,6 +28,9 @@
 		7744D2131C0E7C8600C97F85 /* XCFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744D2121C0E7C8600C97F85 /* XCFColor.m */; };
 		7744D2161C0E7DA200C97F85 /* UIColor+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744D2151C0E7DA200C97F85 /* UIColor+XCF.m */; };
 		7744D2191C0E849B00C97F85 /* UILabel+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744D2181C0E849B00C97F85 /* UILabel+XCF.m */; };
+		777217501C11245C002A4F79 /* UIButton+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7772174F1C11245C002A4F79 /* UIButton+XCF.m */; };
+		777217551C1130C4002A4F79 /* ConfigInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 777217541C1130C4002A4F79 /* ConfigInfo.m */; };
+		777217581C1135A1002A4F79 /* ConfigUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 777217571C1135A1002A4F79 /* ConfigUI.m */; };
 		7784A3211C0D2A2400BC6C56 /* UIBarButtonItem+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7784A3201C0D2A2400BC6C56 /* UIBarButtonItem+XCF.m */; };
 		7784A3241C0D2A9700BC6C56 /* UIView+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7784A3231C0D2A9700BC6C56 /* UIView+XCF.m */; };
 		778767021C0DD92600BD5243 /* XCFTab.json in Resources */ = {isa = PBXBuildFile; fileRef = 778767011C0DD92600BD5243 /* XCFTab.json */; };
@@ -103,6 +106,12 @@
 		7744D2151C0E7DA200C97F85 /* UIColor+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XCF.m"; sourceTree = "<group>"; };
 		7744D2171C0E849B00C97F85 /* UILabel+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+XCF.h"; sourceTree = "<group>"; };
 		7744D2181C0E849B00C97F85 /* UILabel+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+XCF.m"; sourceTree = "<group>"; };
+		7772174E1C11245C002A4F79 /* UIButton+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XCF.h"; sourceTree = "<group>"; };
+		7772174F1C11245C002A4F79 /* UIButton+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XCF.m"; sourceTree = "<group>"; };
+		777217531C1130C4002A4F79 /* ConfigInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigInfo.h; sourceTree = "<group>"; };
+		777217541C1130C4002A4F79 /* ConfigInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigInfo.m; sourceTree = "<group>"; };
+		777217561C1135A1002A4F79 /* ConfigUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigUI.h; sourceTree = "<group>"; };
+		777217571C1135A1002A4F79 /* ConfigUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigUI.m; sourceTree = "<group>"; };
 		7784A31F1C0D2A2400BC6C56 /* UIBarButtonItem+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XCF.h"; sourceTree = "<group>"; };
 		7784A3201C0D2A2400BC6C56 /* UIBarButtonItem+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XCF.m"; sourceTree = "<group>"; };
 		7784A3221C0D2A9700BC6C56 /* UIView+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XCF.h"; sourceTree = "<group>"; };
@@ -391,10 +400,22 @@
 		772E8DCD1C0CA16C006D42C8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				777217511C113066002A4F79 /* Config-配置 */,
 				77D61FBF1C0D78CC004441E9 /* Tool-工具 */,
 				7784A31E1C0D29B100BC6C56 /* Category-类别 */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		777217511C113066002A4F79 /* Config-配置 */ = {
+			isa = PBXGroup;
+			children = (
+				777217531C1130C4002A4F79 /* ConfigInfo.h */,
+				777217541C1130C4002A4F79 /* ConfigInfo.m */,
+				777217561C1135A1002A4F79 /* ConfigUI.h */,
+				777217571C1135A1002A4F79 /* ConfigUI.m */,
+			);
+			path = "Config-配置";
 			sourceTree = "<group>";
 		};
 		7784A31E1C0D29B100BC6C56 /* Category-类别 */ = {
@@ -412,6 +433,8 @@
 				7744D2151C0E7DA200C97F85 /* UIColor+XCF.m */,
 				7744D2171C0E849B00C97F85 /* UILabel+XCF.h */,
 				7744D2181C0E849B00C97F85 /* UILabel+XCF.m */,
+				7772174E1C11245C002A4F79 /* UIButton+XCF.h */,
+				7772174F1C11245C002A4F79 /* UIButton+XCF.m */,
 			);
 			path = "Category-类别";
 			sourceTree = "<group>";
@@ -629,10 +652,12 @@
 				7744D2131C0E7C8600C97F85 /* XCFColor.m in Sources */,
 				772E8D8E1C0C99EB006D42C8 /* AppDelegate.m in Sources */,
 				772E8DE51C0CA54A006D42C8 /* BazController.m in Sources */,
+				777217501C11245C002A4F79 /* UIButton+XCF.m in Sources */,
 				77D61FC81C0D9011004441E9 /* XCFSearchBar.m in Sources */,
 				770D84BB1C0D52CE00A95584 /* KCItems.m in Sources */,
 				770D84B81C0D52CE00A95584 /* KCCursor.m in Sources */,
 				772E8DE81C0CA570006D42C8 /* CommController.m in Sources */,
+				777217551C1130C4002A4F79 /* ConfigInfo.m in Sources */,
 				778767081C0DF61300BD5243 /* KCCreateController.m in Sources */,
 				770D84B51C0D52CE00A95584 /* KC.m in Sources */,
 				77D61FD71C0DA342004441E9 /* UINavigationItem+XCF.m in Sources */,
@@ -644,6 +669,7 @@
 				772E8DE21C0CA537006D42C8 /* MyController.m in Sources */,
 				772E8DD61C0CA3AE006D42C8 /* XCFTabController.m in Sources */,
 				772E8D8B1C0C99EB006D42C8 /* main.m in Sources */,
+				777217581C1135A1002A4F79 /* ConfigUI.m in Sources */,
 				772E8DD01C0CA23E006D42C8 /* KCController.m in Sources */,
 				7787670B1C0DFA5600BD5243 /* UIViewController+XCF.m in Sources */,
 				770D84BA1C0D52CE00A95584 /* KCIssues.m in Sources */,

@@ -24,27 +24,37 @@
 {
     [super viewDidLoad];
     
+    [self setupUI];
+ }
+
+#pragma mark - Delegate 视图委托
+
+#pragma mark - event response 事件相应
+- (void)closeBack
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+#pragma mark - private methods 私有方法
+
+- (void)setupUI
+{
+    // 1.设置背景色
     [self.view setBackgroundColor:[XCFColor colorControllerBackground]];
     
+    // 2.添加子视图
     self.imageLogo.centerX = self.view.centerX;
     self.imageLogo.centerY = self.view.centerY - 100;
     [self.view addSubview:self.imageLogo];
     
     [self.view addSubview:self.buttonCancel];
     
-    self.buttonLogin.center = self.view.center;
+    self.buttonLogin.centerX = self.view.centerX;
+    self.buttonLogin.centerY = ScreenHeight - 100;
     [self.view addSubview:self.buttonLogin];
-}
-
-#pragma mark - Delegate 视图委托
-
-#pragma mark - event response 事件相应
-
-#pragma mark - private methods 私有方法
-
-- (void)closeBack
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    self.buttonRegister.centerX = self.view.centerX;
+    self.buttonRegister.centerY = ScreenHeight - 50;
+    [self.view addSubview:self.buttonRegister];
 }
 
 #pragma mark - getters and setters 属性
@@ -60,15 +70,21 @@
 - (UIButton *)buttonCancel
 {
     if (!_buttonCancel) {
-        _buttonCancel = [[UIButton alloc]initWithFrame:CGRectMake(10, 10, 44, 44)];
-        [_buttonCancel setImage:[UIImage imageNamed:@"closeBlack"] forState:UIControlStateNormal];
+        _buttonCancel = [[UIButton alloc]initWithFrame:CGRectMake(XCFMargin,
+                                                                  XCFMargin + XCFStatusBarHeight,
+                                                                  XCFControlSystemHeight,
+                                                                  XCFControlSystemHeight)];
+        [_buttonCancel setImage:[UIImage imageNamed:@"closeBlack"]
+                       forState:UIControlStateNormal];
+        [_buttonCancel setBordersWithColor:[XCFColor colorRedText]
+                              cornerRadius:XCFControlSystemHeight/2
+                               borderWidth:1];
+        
         [_buttonCancel addTarget:self
                           action:@selector(closeBack)
                 forControlEvents:UIControlEventTouchUpInside];
-        [_buttonCancel.layer setCornerRadius:22];
-        [_buttonCancel.layer setBorderColor:[XCFColor colorRedText].CGColor];
-        [_buttonCancel.layer setBorderWidth:1];
-        [_buttonCancel.layer setMasksToBounds:YES];
+        
+        
     }
     return _buttonCancel;
 }
@@ -76,12 +92,34 @@
 - (UIButton *)buttonLogin
 {
     if (!_buttonLogin) {
-        _buttonLogin = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth - 40, 34)];
-        [_buttonLogin setBackgroundColor:[UIColor redColor]];
-        [_buttonLogin setTitle:@"登录" forState:UIControlStateNormal];
-        [_buttonLogin setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _buttonLogin = [UIButton buttonWithFrame:CGRectMake(0,
+                                                            0,
+                                                            ScreenWidth-XCFControlNormalHeight,
+                                                            XCFControlNormalHeight)
+                                    backgroundColor:RGB(249, 102, 80)
+                                              title:@"登录"
+                                         titleColor:[UIColor whiteColor]
+                                           fontSize:14];
+        [_buttonLogin.layer setCornerRadius:4];
     }
     return _buttonLogin;
 }
+
+- (UIButton *)buttonRegister
+{
+    if (!_buttonRegister) {
+        _buttonRegister = [UIButton buttonWithFrame:CGRectMake(0,
+                                                               0,
+                                                               ScreenWidth-XCFControlNormalHeight,
+                                                               XCFControlNormalHeight)
+                                    backgroundColor:RGB(114, 163, 211)
+                                              title:@"手机注册"
+                                         titleColor:[UIColor whiteColor]
+                                           fontSize:14];
+        [_buttonRegister.layer setCornerRadius:4];
+    }
+    return _buttonRegister;
+}
+
 
 @end

@@ -26,4 +26,8 @@
 #import <MJExtension.h>
 
 #import "UILabel+XCF.h"
+#import "UIButton+XCF.h"
+
+#import "ConfigInfo.h"
+#import "ConfigUI.h"
 #endif /* XCF_pch */
