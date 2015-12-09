@@ -15,4 +15,5 @@
     return @{@"items" : [KCItems class]};
 }
 
+MJLogAllIvars
 @end

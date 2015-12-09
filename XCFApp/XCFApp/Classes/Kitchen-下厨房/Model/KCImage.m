@@ -9,5 +9,5 @@
 #import "KCImage.h"
 
 @implementation KCImage
-
+MJLogAllIvars
 @end

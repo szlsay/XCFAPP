@@ -8,18 +8,18 @@
 
 #import "KCController.h"
 
-#import "KC.h"
-#import "KCContent.h"
-#import "KCIssues.h"
-#import "KCItems.h"
-
 #import "XCFSearchBar.h"
 #import "XCFBarButtonItem.h"
 
 #import "KCCreateController.h"
 
+#import "KC+request.h"
+
+#import "KCIssues.h"
+
 @interface KCController ()
 
+@property (nonatomic, strong) NSArray<KCIssues *> *issues;
 @end
 
 @implementation KCController
@@ -32,26 +32,7 @@
     
     [self setupUI];
     
-    
-    //    NSString *baseUrl = @"http://api.xiachufang.com/v2/issues/list.json?";
-    //    NSString *api = @"cursor=2015-11-30&origin=iphone&api_sign=8f3e001c81ac5733f2570b30e925b58e&sk=w6wLf9JUTDysdvaxDKoVJA&size=2&timezone=Asia%2FShanghai&version=5.1.1&api_key=0f9f79be1dac5f003e7de6f876b17c00";
-    //
-    //    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    //
-    //    [manager GET:[baseUrl stringByAppendingString:api] parameters:nil success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-    //
-    //        KC *kc = [KC objectWithKeyValues:responseObject];
-    //        KCContent *content = kc.content;
-    //
-    //        for (KCIssues *issues in content.issues) {
-    //            NSLog(@"%s, %lu", __FUNCTION__, (unsigned long)issues.items.count);
-    //            for (KCItems *items in issues.items) {
-    //                NSLog(@"%s, %@", __FUNCTION__, items.publish_time);
-    //            }
-    //        }
-    //    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
-    //
-    //    }];
+    [self setupData];
 }
 
 #pragma mark - Delegate 视图委托
@@ -80,6 +61,27 @@
     
 }
 
+
+- (void)setupData
+{
+    
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_enter(group);
+    
+    [KC requestWithCompletionBlock:^(id returnValue) {
+        self.issues = returnValue;
+        NSLog(@"%s, %@", __FUNCTION__, self.issues);
+        
+        dispatch_group_leave(group);
+    } failureBlock:^(NSError *error) {
+        dispatch_group_leave(group);
+        
+    }];
+    
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        
+    });
+}
 #pragma mark - getters and setters 属性
 
 @end

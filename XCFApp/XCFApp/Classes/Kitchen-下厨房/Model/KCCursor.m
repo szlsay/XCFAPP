@@ -9,5 +9,5 @@
 #import "KCCursor.h"
 
 @implementation KCCursor
-
+MJLogAllIvars
 @end

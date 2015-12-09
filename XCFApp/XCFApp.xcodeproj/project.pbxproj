@@ -27,6 +27,7 @@
 		772E8DE21C0CA537006D42C8 /* MyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DE11C0CA537006D42C8 /* MyController.m */; };
 		772E8DE51C0CA54A006D42C8 /* BazController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DE41C0CA54A006D42C8 /* BazController.m */; };
 		772E8DE81C0CA570006D42C8 /* CommController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DE71C0CA570006D42C8 /* CommController.m */; };
+		774103A11C16CCDD00EA9FA9 /* KC+request.m in Sources */ = {isa = PBXBuildFile; fileRef = 774103A01C16CCDD00EA9FA9 /* KC+request.m */; };
 		7744D2131C0E7C8600C97F85 /* XCFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744D2121C0E7C8600C97F85 /* XCFColor.m */; };
 		7744D2161C0E7DA200C97F85 /* UIColor+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744D2151C0E7DA200C97F85 /* UIColor+XCF.m */; };
 		7744D2191C0E849B00C97F85 /* UILabel+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744D2181C0E849B00C97F85 /* UILabel+XCF.m */; };
@@ -106,6 +107,8 @@
 		772E8DE61C0CA570006D42C8 /* CommController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommController.h; sourceTree = "<group>"; };
 		772E8DE71C0CA570006D42C8 /* CommController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommController.m; sourceTree = "<group>"; };
 		772E8DE91C0CABCA006D42C8 /* XCF.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCF.pch; sourceTree = "<group>"; };
+		7741039F1C16CCDD00EA9FA9 /* KC+request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KC+request.h"; sourceTree = "<group>"; };
+		774103A01C16CCDD00EA9FA9 /* KC+request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KC+request.m"; sourceTree = "<group>"; };
 		7744D2111C0E7C8600C97F85 /* XCFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFColor.h; sourceTree = "<group>"; };
 		7744D2121C0E7C8600C97F85 /* XCFColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFColor.m; sourceTree = "<group>"; };
 		7744D2141C0E7DA200C97F85 /* UIColor+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XCF.h"; sourceTree = "<group>"; };
@@ -352,6 +355,8 @@
 			children = (
 				770D84A71C0D52CE00A95584 /* KC.h */,
 				770D84A81C0D52CE00A95584 /* KC.m */,
+				7741039F1C16CCDD00EA9FA9 /* KC+request.h */,
+				774103A01C16CCDD00EA9FA9 /* KC+request.m */,
 				770D84A91C0D52CE00A95584 /* KCContent.h */,
 				770D84AA1C0D52CE00A95584 /* KCContent.m */,
 				770D84AB1C0D52CE00A95584 /* KCContents.h */,
@@ -671,6 +676,7 @@
 				7744D2131C0E7C8600C97F85 /* XCFColor.m in Sources */,
 				772E8D8E1C0C99EB006D42C8 /* AppDelegate.m in Sources */,
 				772E8DE51C0CA54A006D42C8 /* BazController.m in Sources */,
+				774103A11C16CCDD00EA9FA9 /* KC+request.m in Sources */,
 				777217501C11245C002A4F79 /* UIButton+XCF.m in Sources */,
 				77D61FC81C0D9011004441E9 /* XCFSearchBar.m in Sources */,
 				770D84BB1C0D52CE00A95584 /* KCItems.m in Sources */,

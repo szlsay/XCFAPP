@@ -9,5 +9,5 @@
 #import "KC.h"
 
 @implementation KC
-
+MJLogAllIvars
 @end

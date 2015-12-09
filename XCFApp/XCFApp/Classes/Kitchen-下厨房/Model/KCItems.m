@@ -9,5 +9,5 @@
 #import "KCItems.h"
 
 @implementation KCItems
-
+MJLogAllIvars
 @end

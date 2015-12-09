@@ -9,5 +9,5 @@
 #import "KCContents.h"
 
 @implementation KCContents
-
+MJLogAllIvars
 @end

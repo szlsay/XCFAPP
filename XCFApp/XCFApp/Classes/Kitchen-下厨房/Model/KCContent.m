@@ -15,4 +15,7 @@
     return @{@"issues" : [KCIssues class]};
 }
 
+MJLogAllIvars
+
+
 @end
