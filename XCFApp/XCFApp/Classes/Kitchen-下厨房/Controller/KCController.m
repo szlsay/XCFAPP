@@ -14,6 +14,8 @@
 
 // 2.控制器
 #import "KCCreateController.h"
+#import "KCTouchController.h"
+#import "KCDetailController.h"
 
 // 3.数据Model
 #import "KCModel+request.h"
@@ -21,11 +23,12 @@
 #import "KCItems.h"
 
 
+
 // 4.Cell视图
 #import "KCCell.h"
 
 
-@interface KCController ()<UITableViewDataSource, UITableViewDelegate>
+@interface KCController ()<UITableViewDataSource, UITableViewDelegate, UIViewControllerPreviewingDelegate, KCTouchControllerDelegate>
 
 @property (nonatomic, strong) NSArray<KCIssues *> *issues;
 
@@ -62,12 +65,47 @@
 {
     KCCell *cell = [KCCell cellWithTableView:tableView];
     [cell setItems:self.arrayItems[indexPath.row]];
+    
+    [self registerForPreviewingWithDelegate:self sourceView:cell];
+    
+    
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    KCItems *items = self.arrayItems[indexPath.row];
+    KCDetailController *detailVC = [[KCDetailController alloc]init];
+    detailVC.items = items;
+    [self.navigationController pushViewController:detailVC
+                                         animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 400;
+}
+
+
+- (void)previewingContext:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit
+{
+    NSLog(@"%s, %@", __FUNCTION__, self);
+}
+
+- (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location
+{
+    
+    KCCell *cell = (KCCell *)previewingContext.sourceView;
+    
+    KCTouchController *touchVC = [[KCTouchController alloc]init];
+    touchVC.items = cell.items;
+    touchVC.delegate = self;
+    return touchVC;
+}
+
+- (void)touchControllerItems:(KCItems *)items
+{
+    NSLog(@"%s, %@", __FUNCTION__, items);
 }
 #pragma mark - event response 事件相应
 - (void)gotoVC

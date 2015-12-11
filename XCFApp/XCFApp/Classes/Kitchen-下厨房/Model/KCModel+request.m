@@ -10,7 +10,7 @@
 
 #import "KCContent.h"
 
-static NSString * const urlKC = @"http://api.xiachufang.com/v2/issues/list.json?cursor=2015-12-05&origin=iphone&api_sign=c8c2def22217cc4b0df6eb39b0ee122b&sk=w6wLf9JUTDysdvaxDKoVJA&size=2&timezone=Asia%2FShanghai&version=5.1.1&api_key=0f9f79be1dac5f003e7de6f876b17c00";
+static NSString * const urlKC = @"http://api.xiachufang.com/v2/issues/list.json?cursor=&origin=iphone&api_sign=a9874058dcb8dc97659aaf33e812be22&sk=w6wLf9JUTDysdvaxDKoVJA&size=2&timezone=Asia%2FShanghai&version=5.1.1&api_key=0f9f79be1dac5f003e7de6f876b17c00";
 
 
 @implementation KCModel (request)
