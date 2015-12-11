@@ -53,7 +53,24 @@
     // 5.
 }
 
+/**
+ *  3DTouch
+ */
+- (void)application:(UIApplication *)application
+performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem
+  completionHandler:(void(^)(BOOL succeeded))completionHandler
+{
+    [self clickedWithShortcutItem:shortcutItem];
+}
 
+
+-(void)clickedWithShortcutItem:(UIApplicationShortcutItem *)item
+{
+    if (item.userInfo)
+    {
+        NSLog(@"%s, %@", __FUNCTION__, item.userInfo[@"url"]);
+    }
+}
 
 
 @end

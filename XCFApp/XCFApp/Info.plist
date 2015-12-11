@@ -2,6 +2,57 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>UIApplicationShortcutItems</key>
+    <array>
+        <dict>
+            <key>UIApplicationShortcutItemIconFile</key>
+            <string>comment</string>
+            <key>UIApplicationShortcutItemSubtitle</key>
+            <string>我是你哥</string>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>沈天</string>
+            <key>UIApplicationShortcutItemType</key>
+            <string>XS_3D_CHINESE</string>
+            <key>UIApplicationShortcutItemUserInfo</key>
+            <dict>
+                <key>url</key>
+                <string></string>
+            </dict>
+        </dict>
+        
+        <dict>
+            <key>UIApplicationShortcutItemIconFile</key>
+            <string>likeSmall</string>
+            <key>UIApplicationShortcutItemSubtitle</key>
+            <string>一个逗比</string>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>我是阿木南</string>
+            <key>UIApplicationShortcutItemType</key>
+            <string>XS_3D_English</string>
+            <key>UIApplicationShortcutItemUserInfo</key>
+            <dict>
+                <key>url</key>
+                <string>爱 沈天</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>UIApplicationShortcutItemIconFile</key>
+            <string>createctag</string>
+            <key>UIApplicationShortcutItemSubtitle</key>
+            <string>吓死宝贝我了</string>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>上传我的作品</string>
+            <key>UIApplicationShortcutItemType</key>
+            <string>XS_3D_PinYin</string>
+            <key>UIApplicationShortcutItemUserInfo</key>
+            <dict>
+                <key>url</key>
+                <string>求包养</string>
+            </dict>
+        </dict>
+    </array>
+
+    
     <key>NSAppTransportSecurity</key><dict>
         <key>NSAllowsArbitraryLoads</key>
         <true/></dict>
