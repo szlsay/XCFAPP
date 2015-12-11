@@ -1,6 +1,6 @@
 platform :ios, '7.0'
 pod 'MBProgressHUD', '~> 0.9.1'
-pod 'YYImage'
+pod 'YYWebImage'
 pod 'AFNetworking', '~> 2.0'
 pod 'MJRefresh', '~> 2.0.2'
 pod 'MJExtension', '~> 2.3.6'
@@ -8,3 +8,4 @@ pod 'TTTAttributedLabel', '~> 1.13.4'
 pod 'IQKeyboardManager', '~> 3.2.4'
 pod 'UMengAnalytics'#标准SDK，含IDFA(广告)
 pod 'UMengSocial', '~> 4.3'
+pod 'SDWebImage', '~>3.7'

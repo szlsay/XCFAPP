@@ -1,9 +1,9 @@
 //
 //  KCCursor.h
-//  XCFApp
+//  travelInter
 //
-//  Created by rkxt_ios on 15/12/01
-//  Copyright (c) ST. All rights reserved.
+//  Created by rkxt_ios on 15/12/10
+//  Copyright (c) leowu. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

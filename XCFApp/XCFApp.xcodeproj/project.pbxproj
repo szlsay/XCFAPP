@@ -7,13 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		770D84B51C0D52CE00A95584 /* KC.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D84A81C0D52CE00A95584 /* KC.m */; };
-		770D84B61C0D52CE00A95584 /* KCContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D84AA1C0D52CE00A95584 /* KCContent.m */; };
-		770D84B71C0D52CE00A95584 /* KCContents.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D84AC1C0D52CE00A95584 /* KCContents.m */; };
-		770D84B81C0D52CE00A95584 /* KCCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D84AE1C0D52CE00A95584 /* KCCursor.m */; };
-		770D84B91C0D52CE00A95584 /* KCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D84B01C0D52CE00A95584 /* KCImage.m */; };
-		770D84BA1C0D52CE00A95584 /* KCIssues.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D84B21C0D52CE00A95584 /* KCIssues.m */; };
-		770D84BB1C0D52CE00A95584 /* KCItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D84B41C0D52CE00A95584 /* KCItems.m */; };
 		77228FB61C11584800CBB493 /* LoginMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77228FB51C11584800CBB493 /* LoginMainController.m */; };
 		77228FB91C1161F600CBB493 /* XCFTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 77228FB81C1161F600CBB493 /* XCFTextField.m */; };
 		772E8D8B1C0C99EB006D42C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8D8A1C0C99EB006D42C8 /* main.m */; };
@@ -27,13 +20,22 @@
 		772E8DE21C0CA537006D42C8 /* MyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DE11C0CA537006D42C8 /* MyController.m */; };
 		772E8DE51C0CA54A006D42C8 /* BazController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DE41C0CA54A006D42C8 /* BazController.m */; };
 		772E8DE81C0CA570006D42C8 /* CommController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DE71C0CA570006D42C8 /* CommController.m */; };
-		774103A11C16CCDD00EA9FA9 /* KC+request.m in Sources */ = {isa = PBXBuildFile; fileRef = 774103A01C16CCDD00EA9FA9 /* KC+request.m */; };
+		774103A11C16CCDD00EA9FA9 /* KCModel+request.m in Sources */ = {isa = PBXBuildFile; fileRef = 774103A01C16CCDD00EA9FA9 /* KCModel+request.m */; };
 		7744D2131C0E7C8600C97F85 /* XCFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744D2121C0E7C8600C97F85 /* XCFColor.m */; };
 		7744D2161C0E7DA200C97F85 /* UIColor+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744D2151C0E7DA200C97F85 /* UIColor+XCF.m */; };
 		7744D2191C0E849B00C97F85 /* UILabel+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744D2181C0E849B00C97F85 /* UILabel+XCF.m */; };
+		77639FF41C19CADA0004614D /* KCContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639FE71C19CADA0004614D /* KCContent.m */; };
+		77639FF51C19CADA0004614D /* KCIssues.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639FE91C19CADA0004614D /* KCIssues.m */; };
+		77639FF61C19CADA0004614D /* KCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639FEB1C19CADA0004614D /* KCModel.m */; };
+		77639FF71C19CADA0004614D /* KCContents.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639FED1C19CADA0004614D /* KCContents.m */; };
+		77639FF81C19CADA0004614D /* KCCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639FEF1C19CADA0004614D /* KCCursor.m */; };
+		77639FF91C19CADA0004614D /* KCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639FF11C19CADA0004614D /* KCImage.m */; };
+		77639FFA1C19CADA0004614D /* KCItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639FF31C19CADA0004614D /* KCItems.m */; };
 		777217501C11245C002A4F79 /* UIButton+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7772174F1C11245C002A4F79 /* UIButton+XCF.m */; };
 		777217551C1130C4002A4F79 /* ConfigInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 777217541C1130C4002A4F79 /* ConfigInfo.m */; };
 		777217581C1135A1002A4F79 /* ConfigUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 777217571C1135A1002A4F79 /* ConfigUI.m */; };
+		777E8C4C1C1884EA0057EF52 /* XCFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 777E8C4B1C1884EA0057EF52 /* XCFCell.m */; };
+		777E8C4F1C18864A0057EF52 /* KCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 777E8C4E1C18864A0057EF52 /* KCCell.m */; };
 		7784A3211C0D2A2400BC6C56 /* UIBarButtonItem+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7784A3201C0D2A2400BC6C56 /* UIBarButtonItem+XCF.m */; };
 		7784A3241C0D2A9700BC6C56 /* UIView+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7784A3231C0D2A9700BC6C56 /* UIView+XCF.m */; };
 		778767021C0DD92600BD5243 /* XCFTab.json in Resources */ = {isa = PBXBuildFile; fileRef = 778767011C0DD92600BD5243 /* XCFTab.json */; };
@@ -64,20 +66,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		770D84A71C0D52CE00A95584 /* KC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KC.h; sourceTree = "<group>"; };
-		770D84A81C0D52CE00A95584 /* KC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KC.m; sourceTree = "<group>"; };
-		770D84A91C0D52CE00A95584 /* KCContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCContent.h; sourceTree = "<group>"; };
-		770D84AA1C0D52CE00A95584 /* KCContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContent.m; sourceTree = "<group>"; };
-		770D84AB1C0D52CE00A95584 /* KCContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCContents.h; sourceTree = "<group>"; };
-		770D84AC1C0D52CE00A95584 /* KCContents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContents.m; sourceTree = "<group>"; };
-		770D84AD1C0D52CE00A95584 /* KCCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCCursor.h; sourceTree = "<group>"; };
-		770D84AE1C0D52CE00A95584 /* KCCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCCursor.m; sourceTree = "<group>"; };
-		770D84AF1C0D52CE00A95584 /* KCImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCImage.h; sourceTree = "<group>"; };
-		770D84B01C0D52CE00A95584 /* KCImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCImage.m; sourceTree = "<group>"; };
-		770D84B11C0D52CE00A95584 /* KCIssues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCIssues.h; sourceTree = "<group>"; };
-		770D84B21C0D52CE00A95584 /* KCIssues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCIssues.m; sourceTree = "<group>"; };
-		770D84B31C0D52CE00A95584 /* KCItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCItems.h; sourceTree = "<group>"; };
-		770D84B41C0D52CE00A95584 /* KCItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCItems.m; sourceTree = "<group>"; };
 		77228FB41C11584800CBB493 /* LoginMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginMainController.h; sourceTree = "<group>"; };
 		77228FB51C11584800CBB493 /* LoginMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginMainController.m; sourceTree = "<group>"; };
 		77228FB71C1161F600CBB493 /* XCFTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFTextField.h; sourceTree = "<group>"; };
@@ -107,20 +95,38 @@
 		772E8DE61C0CA570006D42C8 /* CommController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommController.h; sourceTree = "<group>"; };
 		772E8DE71C0CA570006D42C8 /* CommController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommController.m; sourceTree = "<group>"; };
 		772E8DE91C0CABCA006D42C8 /* XCF.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCF.pch; sourceTree = "<group>"; };
-		7741039F1C16CCDD00EA9FA9 /* KC+request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KC+request.h"; sourceTree = "<group>"; };
-		774103A01C16CCDD00EA9FA9 /* KC+request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KC+request.m"; sourceTree = "<group>"; };
+		7741039F1C16CCDD00EA9FA9 /* KCModel+request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KCModel+request.h"; sourceTree = "<group>"; };
+		774103A01C16CCDD00EA9FA9 /* KCModel+request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KCModel+request.m"; sourceTree = "<group>"; };
 		7744D2111C0E7C8600C97F85 /* XCFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFColor.h; sourceTree = "<group>"; };
 		7744D2121C0E7C8600C97F85 /* XCFColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFColor.m; sourceTree = "<group>"; };
 		7744D2141C0E7DA200C97F85 /* UIColor+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XCF.h"; sourceTree = "<group>"; };
 		7744D2151C0E7DA200C97F85 /* UIColor+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XCF.m"; sourceTree = "<group>"; };
 		7744D2171C0E849B00C97F85 /* UILabel+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+XCF.h"; sourceTree = "<group>"; };
 		7744D2181C0E849B00C97F85 /* UILabel+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+XCF.m"; sourceTree = "<group>"; };
+		77639FE71C19CADA0004614D /* KCContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContent.m; sourceTree = "<group>"; };
+		77639FE81C19CADA0004614D /* KCIssues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCIssues.h; sourceTree = "<group>"; };
+		77639FE91C19CADA0004614D /* KCIssues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCIssues.m; sourceTree = "<group>"; };
+		77639FEA1C19CADA0004614D /* KCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCModel.h; sourceTree = "<group>"; };
+		77639FEB1C19CADA0004614D /* KCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCModel.m; sourceTree = "<group>"; };
+		77639FEC1C19CADA0004614D /* KCContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCContents.h; sourceTree = "<group>"; };
+		77639FED1C19CADA0004614D /* KCContents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContents.m; sourceTree = "<group>"; };
+		77639FEE1C19CADA0004614D /* KCCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCCursor.h; sourceTree = "<group>"; };
+		77639FEF1C19CADA0004614D /* KCCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCCursor.m; sourceTree = "<group>"; };
+		77639FF01C19CADA0004614D /* KCImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCImage.h; sourceTree = "<group>"; };
+		77639FF11C19CADA0004614D /* KCImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCImage.m; sourceTree = "<group>"; };
+		77639FF21C19CADA0004614D /* KCItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCItems.h; sourceTree = "<group>"; };
+		77639FF31C19CADA0004614D /* KCItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCItems.m; sourceTree = "<group>"; };
+		77639FFB1C19CAF70004614D /* KCContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCContent.h; sourceTree = "<group>"; };
 		7772174E1C11245C002A4F79 /* UIButton+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XCF.h"; sourceTree = "<group>"; };
 		7772174F1C11245C002A4F79 /* UIButton+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XCF.m"; sourceTree = "<group>"; };
 		777217531C1130C4002A4F79 /* ConfigInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigInfo.h; sourceTree = "<group>"; };
 		777217541C1130C4002A4F79 /* ConfigInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigInfo.m; sourceTree = "<group>"; };
 		777217561C1135A1002A4F79 /* ConfigUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigUI.h; sourceTree = "<group>"; };
 		777217571C1135A1002A4F79 /* ConfigUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigUI.m; sourceTree = "<group>"; };
+		777E8C4A1C1884EA0057EF52 /* XCFCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFCell.h; sourceTree = "<group>"; };
+		777E8C4B1C1884EA0057EF52 /* XCFCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFCell.m; sourceTree = "<group>"; };
+		777E8C4D1C18864A0057EF52 /* KCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCCell.h; sourceTree = "<group>"; };
+		777E8C4E1C18864A0057EF52 /* KCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCCell.m; sourceTree = "<group>"; };
 		7784A31F1C0D2A2400BC6C56 /* UIBarButtonItem+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XCF.h"; sourceTree = "<group>"; };
 		7784A3201C0D2A2400BC6C56 /* UIBarButtonItem+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XCF.m"; sourceTree = "<group>"; };
 		7784A3221C0D2A9700BC6C56 /* UIView+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XCF.h"; sourceTree = "<group>"; };
@@ -353,22 +359,22 @@
 		772E8DC71C0CA16C006D42C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				770D84A71C0D52CE00A95584 /* KC.h */,
-				770D84A81C0D52CE00A95584 /* KC.m */,
-				7741039F1C16CCDD00EA9FA9 /* KC+request.h */,
-				774103A01C16CCDD00EA9FA9 /* KC+request.m */,
-				770D84A91C0D52CE00A95584 /* KCContent.h */,
-				770D84AA1C0D52CE00A95584 /* KCContent.m */,
-				770D84AB1C0D52CE00A95584 /* KCContents.h */,
-				770D84AC1C0D52CE00A95584 /* KCContents.m */,
-				770D84AD1C0D52CE00A95584 /* KCCursor.h */,
-				770D84AE1C0D52CE00A95584 /* KCCursor.m */,
-				770D84AF1C0D52CE00A95584 /* KCImage.h */,
-				770D84B01C0D52CE00A95584 /* KCImage.m */,
-				770D84B11C0D52CE00A95584 /* KCIssues.h */,
-				770D84B21C0D52CE00A95584 /* KCIssues.m */,
-				770D84B31C0D52CE00A95584 /* KCItems.h */,
-				770D84B41C0D52CE00A95584 /* KCItems.m */,
+				77639FFB1C19CAF70004614D /* KCContent.h */,
+				77639FE71C19CADA0004614D /* KCContent.m */,
+				77639FE81C19CADA0004614D /* KCIssues.h */,
+				77639FE91C19CADA0004614D /* KCIssues.m */,
+				77639FEA1C19CADA0004614D /* KCModel.h */,
+				77639FEB1C19CADA0004614D /* KCModel.m */,
+				77639FEC1C19CADA0004614D /* KCContents.h */,
+				77639FED1C19CADA0004614D /* KCContents.m */,
+				77639FEE1C19CADA0004614D /* KCCursor.h */,
+				77639FEF1C19CADA0004614D /* KCCursor.m */,
+				77639FF01C19CADA0004614D /* KCImage.h */,
+				77639FF11C19CADA0004614D /* KCImage.m */,
+				77639FF21C19CADA0004614D /* KCItems.h */,
+				77639FF31C19CADA0004614D /* KCItems.m */,
+				7741039F1C16CCDD00EA9FA9 /* KCModel+request.h */,
+				774103A01C16CCDD00EA9FA9 /* KCModel+request.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -376,6 +382,8 @@
 		772E8DC81C0CA16C006D42C8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				777E8C4D1C18864A0057EF52 /* KCCell.h */,
+				777E8C4E1C18864A0057EF52 /* KCCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -471,6 +479,8 @@
 				7744D2121C0E7C8600C97F85 /* XCFColor.m */,
 				77228FB71C1161F600CBB493 /* XCFTextField.h */,
 				77228FB81C1161F600CBB493 /* XCFTextField.m */,
+				777E8C4A1C1884EA0057EF52 /* XCFCell.h */,
+				777E8C4B1C1884EA0057EF52 /* XCFCell.m */,
 			);
 			path = "Tool-工具";
 			sourceTree = "<group>";
@@ -667,29 +677,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77639FF91C19CADA0004614D /* KCImage.m in Sources */,
 				77228FB91C1161F600CBB493 /* XCFTextField.m in Sources */,
 				7784A3241C0D2A9700BC6C56 /* UIView+XCF.m in Sources */,
 				7744D2161C0E7DA200C97F85 /* UIColor+XCF.m in Sources */,
+				77639FF41C19CADA0004614D /* KCContent.m in Sources */,
 				772E8DD91C0CA3D9006D42C8 /* XCFNavController.m in Sources */,
 				7784A3211C0D2A2400BC6C56 /* UIBarButtonItem+XCF.m in Sources */,
+				777E8C4F1C18864A0057EF52 /* KCCell.m in Sources */,
 				7744D2191C0E849B00C97F85 /* UILabel+XCF.m in Sources */,
 				7744D2131C0E7C8600C97F85 /* XCFColor.m in Sources */,
+				77639FF61C19CADA0004614D /* KCModel.m in Sources */,
 				772E8D8E1C0C99EB006D42C8 /* AppDelegate.m in Sources */,
 				772E8DE51C0CA54A006D42C8 /* BazController.m in Sources */,
-				774103A11C16CCDD00EA9FA9 /* KC+request.m in Sources */,
+				774103A11C16CCDD00EA9FA9 /* KCModel+request.m in Sources */,
 				777217501C11245C002A4F79 /* UIButton+XCF.m in Sources */,
+				77639FF71C19CADA0004614D /* KCContents.m in Sources */,
+				777E8C4C1C1884EA0057EF52 /* XCFCell.m in Sources */,
 				77D61FC81C0D9011004441E9 /* XCFSearchBar.m in Sources */,
-				770D84BB1C0D52CE00A95584 /* KCItems.m in Sources */,
-				770D84B81C0D52CE00A95584 /* KCCursor.m in Sources */,
+				77639FF81C19CADA0004614D /* KCCursor.m in Sources */,
 				772E8DE81C0CA570006D42C8 /* CommController.m in Sources */,
 				777217551C1130C4002A4F79 /* ConfigInfo.m in Sources */,
 				778767081C0DF61300BD5243 /* KCCreateController.m in Sources */,
-				770D84B51C0D52CE00A95584 /* KC.m in Sources */,
+				77639FFA1C19CADA0004614D /* KCItems.m in Sources */,
 				77228FB61C11584800CBB493 /* LoginMainController.m in Sources */,
+				77639FF51C19CADA0004614D /* KCIssues.m in Sources */,
 				77D61FD71C0DA342004441E9 /* UINavigationItem+XCF.m in Sources */,
-				770D84B71C0D52CE00A95584 /* KCContents.m in Sources */,
-				770D84B91C0D52CE00A95584 /* KCImage.m in Sources */,
-				770D84B61C0D52CE00A95584 /* KCContent.m in Sources */,
 				778767051C0DEA8000BD5243 /* XCFBarButtonItem.m in Sources */,
 				779B927F1C1092DE00D9BAFF /* LoginController.m in Sources */,
 				772E8DE21C0CA537006D42C8 /* MyController.m in Sources */,
@@ -698,7 +711,6 @@
 				777217581C1135A1002A4F79 /* ConfigUI.m in Sources */,
 				772E8DD01C0CA23E006D42C8 /* KCController.m in Sources */,
 				7787670B1C0DFA5600BD5243 /* UIViewController+XCF.m in Sources */,
-				770D84BA1C0D52CE00A95584 /* KCIssues.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

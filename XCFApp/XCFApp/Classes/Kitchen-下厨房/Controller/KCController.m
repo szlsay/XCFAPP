@@ -8,18 +8,29 @@
 
 #import "KCController.h"
 
+// 1.控件
 #import "XCFSearchBar.h"
 #import "XCFBarButtonItem.h"
 
+// 2.控制器
 #import "KCCreateController.h"
 
-#import "KC+request.h"
-
+// 3.数据Model
+#import "KCModel+request.h"
 #import "KCIssues.h"
+#import "KCItems.h"
 
-@interface KCController ()
+
+// 4.Cell视图
+#import "KCCell.h"
+
+
+@interface KCController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSArray<KCIssues *> *issues;
+
+@property (nonatomic, strong, nullable)UITableView *tableView; //
+@property (nonatomic, strong, nullable)NSMutableArray <KCItems *>* arrayItems; //
 @end
 
 @implementation KCController
@@ -37,6 +48,27 @@
 
 #pragma mark - Delegate 视图委托
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.arrayItems.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    KCCell *cell = [KCCell cellWithTableView:tableView];
+    [cell setItems:self.arrayItems[indexPath.row]];
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 400;
+}
 #pragma mark - event response 事件相应
 - (void)gotoVC
 {
@@ -59,6 +91,9 @@
                                                                                    target:self
                                                                                    action:@selector(gotoVC)];
     
+    // 3.添加子视图
+    [self.view addSubview:self.tableView];
+    
 }
 
 
@@ -68,20 +103,53 @@
     dispatch_group_t group = dispatch_group_create();
     dispatch_group_enter(group);
     
-    [KC requestWithCompletionBlock:^(id returnValue) {
+    [KCModel requestWithCompletionBlock:^(id returnValue) {
         self.issues = returnValue;
-        NSLog(@"%s, %@", __FUNCTION__, self.issues);
-        
         dispatch_group_leave(group);
     } failureBlock:^(NSError *error) {
         dispatch_group_leave(group);
         
     }];
     
+    [self.arrayItems removeAllObjects];
+    
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        [self.issues enumerateObjectsUsingBlock:^(KCIssues * _Nonnull obj,
+                                                  NSUInteger idx,
+                                                  BOOL * _Nonnull stop) {
+
+            [obj.items enumerateObjectsUsingBlock:^(KCItems * _Nonnull obj,
+                                                    NSUInteger idx,
+                                                    BOOL * _Nonnull stop) {
+                [self.arrayItems addObject:obj];
+                
+            }];
+        }];
         
+        
+        [self.tableView reloadData];
     });
 }
 #pragma mark - getters and setters 属性
+
+- (UITableView *)tableView
+{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+        [_tableView setDelegate:self];
+        [_tableView setDataSource:self];
+    }
+    return _tableView;
+}
+
+- (NSMutableArray<KCItems *> *)arrayItems
+{
+    if (!_arrayItems) {
+        _arrayItems = [NSMutableArray array];
+    }
+    return _arrayItems;
+}
+
+
 
 @end

@@ -34,12 +34,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TTTAttributedLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>YYImage.xcscheme</key>
+		<key>YYWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,7 +52,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>068C78E9B1B6EB93506547002E7C7FDD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4BEC0462AC6986CBA4E502EA0F07A830</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,7 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7110FE09835CB2C7E88832D5B9D3693D</key>
+		<key>870CDA62668D1EBBBC32E743B292B10E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +82,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC349025C84AE6A9989C7A389B0185D4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C0EE09826D1B06374724DD36E4098B46</key>
+		<key>E01709D16C4B68963BC16846C040CF2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
