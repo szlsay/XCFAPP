@@ -22,8 +22,6 @@
 #import "KCIssues.h"
 #import "KCItems.h"
 
-
-
 // 4.Cell视图
 #import "KCCell.h"
 
