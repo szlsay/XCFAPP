@@ -43,4 +43,9 @@
  *  @return <#return value description#>
  */
 + (UIColor *)colorRedText;
+
+/**
+ *  7.字体的默认颜色
+ */
++ (UIColor *)colorTextNormal;
 @end

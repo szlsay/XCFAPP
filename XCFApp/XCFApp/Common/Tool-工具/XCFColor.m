@@ -40,4 +40,9 @@
     return RGB(249, 112, 92);
 }
 
++ (UIColor *)colorTextNormal
+{
+    return RGB(87, 87, 82);
+}
+
 @end

@@ -45,6 +45,9 @@
 		778767081C0DF61300BD5243 /* KCCreateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778767071C0DF61300BD5243 /* KCCreateController.m */; };
 		7787670B1C0DFA5600BD5243 /* UIViewController+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7787670A1C0DFA5600BD5243 /* UIViewController+XCF.m */; };
 		779B927F1C1092DE00D9BAFF /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779B927E1C1092DE00D9BAFF /* LoginController.m */; };
+		77A7A0C31C2300FD00F365B1 /* KCAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A7A0C21C2300FD00F365B1 /* KCAuthor.m */; };
+		77A7A0C61C2306FA00F365B1 /* KCCellManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A7A0C51C2306FA00F365B1 /* KCCellManager.m */; };
+		77A7A0C91C23173300F365B1 /* NSString+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A7A0C81C23173300F365B1 /* NSString+XCF.m */; };
 		77D61FC81C0D9011004441E9 /* XCFSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D61FC71C0D9011004441E9 /* XCFSearchBar.m */; };
 		77D61FD71C0DA342004441E9 /* UINavigationItem+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D61FD61C0DA342004441E9 /* UINavigationItem+XCF.m */; };
 		C5269E2C6D9BCB026B2116E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5F2A82BB67595263D09ED4 /* libPods.a */; };
@@ -146,6 +149,12 @@
 		7787670A1C0DFA5600BD5243 /* UIViewController+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XCF.m"; sourceTree = "<group>"; };
 		779B927D1C1092DE00D9BAFF /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		779B927E1C1092DE00D9BAFF /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		77A7A0C11C2300FD00F365B1 /* KCAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAuthor.h; sourceTree = "<group>"; };
+		77A7A0C21C2300FD00F365B1 /* KCAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAuthor.m; sourceTree = "<group>"; };
+		77A7A0C41C2306FA00F365B1 /* KCCellManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCCellManager.h; sourceTree = "<group>"; };
+		77A7A0C51C2306FA00F365B1 /* KCCellManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCCellManager.m; sourceTree = "<group>"; };
+		77A7A0C71C23173300F365B1 /* NSString+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XCF.h"; sourceTree = "<group>"; };
+		77A7A0C81C23173300F365B1 /* NSString+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XCF.m"; sourceTree = "<group>"; };
 		77D61FC61C0D9011004441E9 /* XCFSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFSearchBar.h; sourceTree = "<group>"; };
 		77D61FC71C0D9011004441E9 /* XCFSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFSearchBar.m; sourceTree = "<group>"; };
 		77D61FD51C0DA342004441E9 /* UINavigationItem+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+XCF.h"; sourceTree = "<group>"; };
@@ -377,6 +386,8 @@
 				77639FEB1C19CADA0004614D /* KCModel.m */,
 				77639FEC1C19CADA0004614D /* KCContents.h */,
 				77639FED1C19CADA0004614D /* KCContents.m */,
+				77A7A0C11C2300FD00F365B1 /* KCAuthor.h */,
+				77A7A0C21C2300FD00F365B1 /* KCAuthor.m */,
 				77639FEE1C19CADA0004614D /* KCCursor.h */,
 				77639FEF1C19CADA0004614D /* KCCursor.m */,
 				77639FF01C19CADA0004614D /* KCImage.h */,
@@ -394,6 +405,8 @@
 			children = (
 				777E8C4D1C18864A0057EF52 /* KCCell.h */,
 				777E8C4E1C18864A0057EF52 /* KCCell.m */,
+				77A7A0C41C2306FA00F365B1 /* KCCellManager.h */,
+				77A7A0C51C2306FA00F365B1 /* KCCellManager.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -474,6 +487,8 @@
 				7744D2181C0E849B00C97F85 /* UILabel+XCF.m */,
 				7772174E1C11245C002A4F79 /* UIButton+XCF.h */,
 				7772174F1C11245C002A4F79 /* UIButton+XCF.m */,
+				77A7A0C71C23173300F365B1 /* NSString+XCF.h */,
+				77A7A0C81C23173300F365B1 /* NSString+XCF.m */,
 			);
 			path = "Category-类别";
 			sourceTree = "<group>";
@@ -699,16 +714,19 @@
 				7744D2131C0E7C8600C97F85 /* XCFColor.m in Sources */,
 				77639FF61C19CADA0004614D /* KCModel.m in Sources */,
 				772E8D8E1C0C99EB006D42C8 /* AppDelegate.m in Sources */,
+				77A7A0C31C2300FD00F365B1 /* KCAuthor.m in Sources */,
 				772E8DE51C0CA54A006D42C8 /* BazController.m in Sources */,
 				774103A11C16CCDD00EA9FA9 /* KCModel+request.m in Sources */,
 				777217501C11245C002A4F79 /* UIButton+XCF.m in Sources */,
 				77639FF71C19CADA0004614D /* KCContents.m in Sources */,
 				77445FE21C1A940E0001B6CC /* KCDetailController.m in Sources */,
 				77445FDF1C1A89C70001B6CC /* KCTouchController.m in Sources */,
+				77A7A0C91C23173300F365B1 /* NSString+XCF.m in Sources */,
 				777E8C4C1C1884EA0057EF52 /* XCFCell.m in Sources */,
 				77D61FC81C0D9011004441E9 /* XCFSearchBar.m in Sources */,
 				77639FF81C19CADA0004614D /* KCCursor.m in Sources */,
 				772E8DE81C0CA570006D42C8 /* CommController.m in Sources */,
+				77A7A0C61C2306FA00F365B1 /* KCCellManager.m in Sources */,
 				777217551C1130C4002A4F79 /* ConfigInfo.m in Sources */,
 				778767081C0DF61300BD5243 /* KCCreateController.m in Sources */,
 				77639FFA1C19CADA0004614D /* KCItems.m in Sources */,

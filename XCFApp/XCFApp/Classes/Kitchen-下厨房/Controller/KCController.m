@@ -22,8 +22,10 @@
 #import "KCIssues.h"
 #import "KCItems.h"
 
+
 // 4.Cell视图
 #import "KCCell.h"
+#import "KCCellManager.h"
 
 
 @interface KCController ()<UITableViewDataSource, UITableViewDelegate, UIViewControllerPreviewingDelegate, KCTouchControllerDelegate>
@@ -62,9 +64,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     KCCell *cell = [KCCell cellWithTableView:tableView];
-    [cell setItems:self.arrayItems[indexPath.row]];
+    KCCellManager *manager = [KCCellManager new];
+    [manager setItems:self.arrayItems[indexPath.row]];
+    [cell setManager:manager];
     
-    [self registerForPreviewingWithDelegate:self sourceView:cell];
+//    [self registerForPreviewingWithDelegate:self sourceView:cell];
     
     
     return cell;
@@ -72,16 +76,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    KCItems *items = self.arrayItems[indexPath.row];
-    KCDetailController *detailVC = [[KCDetailController alloc]init];
-    detailVC.items = items;
-    [self.navigationController pushViewController:detailVC
-                                         animated:YES];
+//    KCItems *items = self.arrayItems[indexPath.row];
+//    KCDetailController *detailVC = [[KCDetailController alloc]init];
+//    detailVC.items = items;
+//    [self.navigationController pushViewController:detailVC
+//                                         animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 400;
+    KCCellManager *manager = [KCCellManager new];
+    [manager setItems:self.arrayItems[indexPath.row]];
+    return manager.heightCell;
 }
 
 

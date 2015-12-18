@@ -26,4 +26,7 @@ CGFloat const XCFControlNormalHeight = 34;
 /** 6.状态栏高度值 */
 CGFloat const XCFStatusBarHeight = 20;
 
+/** 7.统一的较大间距 */
+CGFloat const XCFMarginBig = 16;
+
 

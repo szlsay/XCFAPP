@@ -27,3 +27,6 @@ UIKIT_EXTERN CGFloat const XCFControlNormalHeight;
 /** 6.状态栏高度值 */
 UIKIT_EXTERN CGFloat const XCFStatusBarHeight;
 
+/** 7.统一的较大间距 */
+UIKIT_EXTERN CGFloat const XCFMarginBig;
+
