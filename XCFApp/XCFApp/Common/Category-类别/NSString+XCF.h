@@ -21,4 +21,17 @@
               maxWidth:(CGFloat)maxWidth
              maxHeight:(CGFloat)maxHeight;
 
+- (CGSize)sizeWithAttributes:(NSDictionary<NSString *,id> *)attrs
+                     maxSize:(CGSize)maxSize;
+
+/**
+ *  1.如果请求的字符串不为空，返回本身，否则返回占位默认字符串
+ *
+ *  @param stringRequest <#stringRequest description#>
+ *  @param defaultString <#defaultString description#>
+ *
+ *  @return <#return value description#>
+ */
++ (NSString *)stringWithRequestString:(NSString *)stringRequest
+                        defaultString:(NSString *)defaultString;
 @end

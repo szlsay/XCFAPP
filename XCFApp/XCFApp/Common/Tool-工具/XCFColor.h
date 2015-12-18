@@ -48,4 +48,11 @@
  *  7.字体的默认颜色
  */
 + (UIColor *)colorTextNormal;
+
+/**
+ *  8.图片的layer颜色
+ *
+ *  @return <#return value description#>
+ */
++ (UIColor *)colorLayerPicture;
 @end

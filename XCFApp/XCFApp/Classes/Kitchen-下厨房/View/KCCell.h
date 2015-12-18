@@ -7,10 +7,7 @@
 //
 
 #import "XCFCell.h"
-@class KCItems;
-
 @class KCCellManager;
 @interface KCCell : XCFCell
-@property (nonatomic, strong, nullable)KCItems *items; //
 @property (nonatomic, strong, nullable)KCCellManager *manager; //
 @end

@@ -20,4 +20,42 @@
                               context:nil].size;
 }
 
+
+- (CGSize)sizeWithAttributes:(NSDictionary<NSString *,id> *)attrs  maxSize:(CGSize)maxSize
+{
+    return [self boundingRectWithSize:maxSize
+                              options:NSStringDrawingUsesLineFragmentOrigin
+                           attributes:attrs
+                              context:nil].size;
+}
+
+//判断字符串是否为空
++ (BOOL) isBlankString:(NSString *)string {
+    if (string == nil || string == NULL) {
+        return YES;
+    }
+    if ([string isKindOfClass:[NSNull class]]) {
+        return YES;
+    }
+    if ([[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0) {
+        return YES;
+    }
+    
+    if ([string isEqualToString:@"(null)"] || [string isEqualToString:@"<null>"]) {
+        return YES;
+    }
+    
+    return NO;
+}
+
+
++ (NSString *)stringWithRequestString:(NSString *)stringRequest
+                        defaultString:(NSString *)defaultString
+{
+    if ([self isBlankString:stringRequest]) {
+        return defaultString;
+    }else {
+        return stringRequest;
+    }
+}
 @end

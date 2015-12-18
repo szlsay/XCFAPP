@@ -99,11 +99,11 @@
 - (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location
 {
     
-    KCCell *cell = (KCCell *)previewingContext.sourceView;
-    
+//    KCCell *cell = (KCCell *)previewingContext.sourceView;
+//    
     KCTouchController *touchVC = [[KCTouchController alloc]init];
-    touchVC.items = cell.items;
-    touchVC.delegate = self;
+//    touchVC.items = cell.items;
+//    touchVC.delegate = self;
     return touchVC;
 }
 

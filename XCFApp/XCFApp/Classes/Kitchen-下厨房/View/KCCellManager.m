@@ -44,14 +44,14 @@
     _frameCook = CGRectMake(cookX, cookY, cookW, cookH);
     
     
-    if (items.template == 1) {
+    if (items.template == 1 || items.template == 5) {
         CGFloat titleX = XCFMarginBig;
-        CGFloat titleY = CGRectGetMaxY(_framePicture) + XCFMarginSmall;
+        CGFloat titleY = CGRectGetMaxY(_framePicture) + XCFMargin;
         CGFloat titleW = ScreenWidth - 2 * titleX;
         CGSize titleSize = [items.contents.title sizeWithFont:17
                                                      maxWidth:titleW
                                                     maxHeight:ScreenHeight];
-        CGFloat titleH = titleSize.height;
+        CGFloat titleH = titleSize.height + XCFMarginSmall;
         _frameTitle = CGRectMake(titleX, titleY, titleW, titleH);
         
         
@@ -61,9 +61,8 @@
         CGSize descSize = [items.contents.desc sizeWithFont:12
                                                    maxWidth:descW
                                                   maxHeight:ScreenHeight];
-        CGFloat descH = descSize.height;
+        CGFloat descH = descSize.height + XCFMargin;
         _frameDesc = CGRectMake(descX, descY, descW, descH);
-
     }
     
     switch (items.template) {
@@ -77,7 +76,7 @@
             _heightCell = CGRectGetMaxY(_framePicture)+ 1;
             break;
         default:
-            _heightCell = CGRectGetMaxY(_framePicture) + 1 + 90 ;
+            _heightCell = CGRectGetMaxY(_framePicture) + 1 + 75 ;
             break;
     }
     

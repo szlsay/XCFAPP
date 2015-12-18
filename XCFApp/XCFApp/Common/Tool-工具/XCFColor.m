@@ -45,4 +45,9 @@
     return RGB(87, 87, 82);
 }
 
++ (UIColor *)colorLayerPicture
+{
+    return RGBA(0, 0, 0, (255.0 - 191.0)/255);
+}
+
 @end
