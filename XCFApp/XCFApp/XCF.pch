@@ -9,10 +9,16 @@
 #ifndef XCF_pch
 #define XCF_pch
 
+@import Foundation;
+
 #define ScreenWidth  CGRectGetWidth([UIScreen mainScreen].bounds)
 #define ScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
 
 #define APPVERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+
+typedef void(^CompletionBlock)(id returnValue);
+typedef void(^FailureBlock)(NSError *error);
 
 #pragma mark - 配置文件
 #import "ConfigInfo.h"
@@ -22,6 +28,8 @@
 #import "XCFColor.h"
 #import "XCFBarButtonItem.h"
 #import "XCFTextField.h"
+#import "XCFAttributedDictionary.h"
+#import "XCFLog.h"
 
 #pragma mark - 类别文件
 #import "UILabel+XCF.h"

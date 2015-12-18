@@ -21,7 +21,7 @@
 #import "KCModel+request.h"
 #import "KCIssues.h"
 #import "KCItems.h"
-
+#import "KCBannerModel+Request.h"
 
 // 4.Cell视图
 #import "KCCell.h"
@@ -47,6 +47,8 @@
     [self setupUI];
     
     [self setupData];
+    
+    [self setupBanner];
 }
 
 #pragma mark - Delegate 视图委托
@@ -141,7 +143,6 @@
 
 - (void)setupData
 {
-    
     dispatch_group_t group = dispatch_group_create();
     dispatch_group_enter(group);
     
@@ -171,6 +172,23 @@
         
         [self.tableView reloadData];
     });
+}
+
+
+- (void)setupBanner
+{
+
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_enter(group);
+    
+    [KCBannerModel requestWithCompletionBlock:^(id returnValue) {
+        XCFLog(@"1234");
+        MJLog(@"3456");
+        NSLog(@"%s, %@", __FUNCTION__, returnValue);
+        dispatch_group_leave(group);
+    } failureBlock:^(NSError *error) {
+         dispatch_group_leave(group);
+    }];
 }
 #pragma mark - getters and setters 属性
 

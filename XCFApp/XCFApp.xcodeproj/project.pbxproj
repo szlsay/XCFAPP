@@ -48,6 +48,13 @@
 		77A7A0C31C2300FD00F365B1 /* KCAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A7A0C21C2300FD00F365B1 /* KCAuthor.m */; };
 		77A7A0C61C2306FA00F365B1 /* KCCellManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A7A0C51C2306FA00F365B1 /* KCCellManager.m */; };
 		77A7A0C91C23173300F365B1 /* NSString+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A7A0C81C23173300F365B1 /* NSString+XCF.m */; };
+		77A8B0DC1C24742800A460E9 /* XCFAttributedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B0DB1C24742800A460E9 /* XCFAttributedDictionary.m */; };
+		77A8B0E71C247E1500A460E9 /* KCBannerAdInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B0E01C247E1500A460E9 /* KCBannerAdInfo.m */; };
+		77A8B0E81C247E1500A460E9 /* KCBannerContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B0E21C247E1500A460E9 /* KCBannerContent.m */; };
+		77A8B0E91C247E1500A460E9 /* KCBannerImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B0E41C247E1500A460E9 /* KCBannerImage.m */; };
+		77A8B0EA1C247E1500A460E9 /* KCBannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B0E61C247E1500A460E9 /* KCBannerModel.m */; };
+		77A8B0ED1C247E5800A460E9 /* KCBannerModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B0EC1C247E5800A460E9 /* KCBannerModel+Request.m */; };
+		77A8B0F01C24814B00A460E9 /* XCFLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B0EF1C24814B00A460E9 /* XCFLog.m */; };
 		77D61FC81C0D9011004441E9 /* XCFSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D61FC71C0D9011004441E9 /* XCFSearchBar.m */; };
 		77D61FD71C0DA342004441E9 /* UINavigationItem+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D61FD61C0DA342004441E9 /* UINavigationItem+XCF.m */; };
 		C5269E2C6D9BCB026B2116E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5F2A82BB67595263D09ED4 /* libPods.a */; };
@@ -155,6 +162,20 @@
 		77A7A0C51C2306FA00F365B1 /* KCCellManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCCellManager.m; sourceTree = "<group>"; };
 		77A7A0C71C23173300F365B1 /* NSString+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XCF.h"; sourceTree = "<group>"; };
 		77A7A0C81C23173300F365B1 /* NSString+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XCF.m"; sourceTree = "<group>"; };
+		77A8B0DA1C24742800A460E9 /* XCFAttributedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFAttributedDictionary.h; sourceTree = "<group>"; };
+		77A8B0DB1C24742800A460E9 /* XCFAttributedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFAttributedDictionary.m; sourceTree = "<group>"; };
+		77A8B0DF1C247E1500A460E9 /* KCBannerAdInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBannerAdInfo.h; sourceTree = "<group>"; };
+		77A8B0E01C247E1500A460E9 /* KCBannerAdInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBannerAdInfo.m; sourceTree = "<group>"; };
+		77A8B0E11C247E1500A460E9 /* KCBannerContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBannerContent.h; sourceTree = "<group>"; };
+		77A8B0E21C247E1500A460E9 /* KCBannerContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBannerContent.m; sourceTree = "<group>"; };
+		77A8B0E31C247E1500A460E9 /* KCBannerImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBannerImage.h; sourceTree = "<group>"; };
+		77A8B0E41C247E1500A460E9 /* KCBannerImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBannerImage.m; sourceTree = "<group>"; };
+		77A8B0E51C247E1500A460E9 /* KCBannerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBannerModel.h; sourceTree = "<group>"; };
+		77A8B0E61C247E1500A460E9 /* KCBannerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBannerModel.m; sourceTree = "<group>"; };
+		77A8B0EB1C247E5800A460E9 /* KCBannerModel+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KCBannerModel+Request.h"; sourceTree = "<group>"; };
+		77A8B0EC1C247E5800A460E9 /* KCBannerModel+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KCBannerModel+Request.m"; sourceTree = "<group>"; };
+		77A8B0EE1C24814B00A460E9 /* XCFLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFLog.h; sourceTree = "<group>"; };
+		77A8B0EF1C24814B00A460E9 /* XCFLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFLog.m; sourceTree = "<group>"; };
 		77D61FC61C0D9011004441E9 /* XCFSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFSearchBar.h; sourceTree = "<group>"; };
 		77D61FC71C0D9011004441E9 /* XCFSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFSearchBar.m; sourceTree = "<group>"; };
 		77D61FD51C0DA342004441E9 /* UINavigationItem+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+XCF.h"; sourceTree = "<group>"; };
@@ -378,24 +399,8 @@
 		772E8DC71C0CA16C006D42C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				77639FFB1C19CAF70004614D /* KCContent.h */,
-				77639FE71C19CADA0004614D /* KCContent.m */,
-				77639FE81C19CADA0004614D /* KCIssues.h */,
-				77639FE91C19CADA0004614D /* KCIssues.m */,
-				77639FEA1C19CADA0004614D /* KCModel.h */,
-				77639FEB1C19CADA0004614D /* KCModel.m */,
-				77639FEC1C19CADA0004614D /* KCContents.h */,
-				77639FED1C19CADA0004614D /* KCContents.m */,
-				77A7A0C11C2300FD00F365B1 /* KCAuthor.h */,
-				77A7A0C21C2300FD00F365B1 /* KCAuthor.m */,
-				77639FEE1C19CADA0004614D /* KCCursor.h */,
-				77639FEF1C19CADA0004614D /* KCCursor.m */,
-				77639FF01C19CADA0004614D /* KCImage.h */,
-				77639FF11C19CADA0004614D /* KCImage.m */,
-				77639FF21C19CADA0004614D /* KCItems.h */,
-				77639FF31C19CADA0004614D /* KCItems.m */,
-				7741039F1C16CCDD00EA9FA9 /* KCModel+request.h */,
-				774103A01C16CCDD00EA9FA9 /* KCModel+request.m */,
+				77A8B0DE1C247CDB00A460E9 /* KCBannerModel-上方广告Model */,
+				77A8B0DD1C247C7E00A460E9 /* KCModel-列表Model */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -493,6 +498,48 @@
 			path = "Category-类别";
 			sourceTree = "<group>";
 		};
+		77A8B0DD1C247C7E00A460E9 /* KCModel-列表Model */ = {
+			isa = PBXGroup;
+			children = (
+				77639FFB1C19CAF70004614D /* KCContent.h */,
+				77639FE71C19CADA0004614D /* KCContent.m */,
+				77639FE81C19CADA0004614D /* KCIssues.h */,
+				77639FE91C19CADA0004614D /* KCIssues.m */,
+				77639FEA1C19CADA0004614D /* KCModel.h */,
+				77639FEB1C19CADA0004614D /* KCModel.m */,
+				77639FEC1C19CADA0004614D /* KCContents.h */,
+				77639FED1C19CADA0004614D /* KCContents.m */,
+				77A7A0C11C2300FD00F365B1 /* KCAuthor.h */,
+				77A7A0C21C2300FD00F365B1 /* KCAuthor.m */,
+				77639FEE1C19CADA0004614D /* KCCursor.h */,
+				77639FEF1C19CADA0004614D /* KCCursor.m */,
+				77639FF01C19CADA0004614D /* KCImage.h */,
+				77639FF11C19CADA0004614D /* KCImage.m */,
+				77639FF21C19CADA0004614D /* KCItems.h */,
+				77639FF31C19CADA0004614D /* KCItems.m */,
+				7741039F1C16CCDD00EA9FA9 /* KCModel+request.h */,
+				774103A01C16CCDD00EA9FA9 /* KCModel+request.m */,
+			);
+			name = "KCModel-列表Model";
+			sourceTree = "<group>";
+		};
+		77A8B0DE1C247CDB00A460E9 /* KCBannerModel-上方广告Model */ = {
+			isa = PBXGroup;
+			children = (
+				77A8B0DF1C247E1500A460E9 /* KCBannerAdInfo.h */,
+				77A8B0E01C247E1500A460E9 /* KCBannerAdInfo.m */,
+				77A8B0E11C247E1500A460E9 /* KCBannerContent.h */,
+				77A8B0E21C247E1500A460E9 /* KCBannerContent.m */,
+				77A8B0E31C247E1500A460E9 /* KCBannerImage.h */,
+				77A8B0E41C247E1500A460E9 /* KCBannerImage.m */,
+				77A8B0E51C247E1500A460E9 /* KCBannerModel.h */,
+				77A8B0E61C247E1500A460E9 /* KCBannerModel.m */,
+				77A8B0EB1C247E5800A460E9 /* KCBannerModel+Request.h */,
+				77A8B0EC1C247E5800A460E9 /* KCBannerModel+Request.m */,
+			);
+			name = "KCBannerModel-上方广告Model";
+			sourceTree = "<group>";
+		};
 		77D61FBF1C0D78CC004441E9 /* Tool-工具 */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,10 +549,14 @@
 				778767041C0DEA8000BD5243 /* XCFBarButtonItem.m */,
 				7744D2111C0E7C8600C97F85 /* XCFColor.h */,
 				7744D2121C0E7C8600C97F85 /* XCFColor.m */,
+				77A8B0DA1C24742800A460E9 /* XCFAttributedDictionary.h */,
+				77A8B0DB1C24742800A460E9 /* XCFAttributedDictionary.m */,
 				77228FB71C1161F600CBB493 /* XCFTextField.h */,
 				77228FB81C1161F600CBB493 /* XCFTextField.m */,
 				777E8C4A1C1884EA0057EF52 /* XCFCell.h */,
 				777E8C4B1C1884EA0057EF52 /* XCFCell.m */,
+				77A8B0EE1C24814B00A460E9 /* XCFLog.h */,
+				77A8B0EF1C24814B00A460E9 /* XCFLog.m */,
 			);
 			path = "Tool-工具";
 			sourceTree = "<group>";
@@ -703,17 +754,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				77639FF91C19CADA0004614D /* KCImage.m in Sources */,
+				77A8B0E91C247E1500A460E9 /* KCBannerImage.m in Sources */,
 				77228FB91C1161F600CBB493 /* XCFTextField.m in Sources */,
 				7784A3241C0D2A9700BC6C56 /* UIView+XCF.m in Sources */,
 				7744D2161C0E7DA200C97F85 /* UIColor+XCF.m in Sources */,
 				77639FF41C19CADA0004614D /* KCContent.m in Sources */,
 				772E8DD91C0CA3D9006D42C8 /* XCFNavController.m in Sources */,
+				77A8B0EA1C247E1500A460E9 /* KCBannerModel.m in Sources */,
 				7784A3211C0D2A2400BC6C56 /* UIBarButtonItem+XCF.m in Sources */,
 				777E8C4F1C18864A0057EF52 /* KCCell.m in Sources */,
 				7744D2191C0E849B00C97F85 /* UILabel+XCF.m in Sources */,
 				7744D2131C0E7C8600C97F85 /* XCFColor.m in Sources */,
 				77639FF61C19CADA0004614D /* KCModel.m in Sources */,
 				772E8D8E1C0C99EB006D42C8 /* AppDelegate.m in Sources */,
+				77A8B0ED1C247E5800A460E9 /* KCBannerModel+Request.m in Sources */,
 				77A7A0C31C2300FD00F365B1 /* KCAuthor.m in Sources */,
 				772E8DE51C0CA54A006D42C8 /* BazController.m in Sources */,
 				774103A11C16CCDD00EA9FA9 /* KCModel+request.m in Sources */,
@@ -721,11 +775,15 @@
 				77639FF71C19CADA0004614D /* KCContents.m in Sources */,
 				77445FE21C1A940E0001B6CC /* KCDetailController.m in Sources */,
 				77445FDF1C1A89C70001B6CC /* KCTouchController.m in Sources */,
+				77A8B0DC1C24742800A460E9 /* XCFAttributedDictionary.m in Sources */,
 				77A7A0C91C23173300F365B1 /* NSString+XCF.m in Sources */,
+				77A8B0F01C24814B00A460E9 /* XCFLog.m in Sources */,
 				777E8C4C1C1884EA0057EF52 /* XCFCell.m in Sources */,
 				77D61FC81C0D9011004441E9 /* XCFSearchBar.m in Sources */,
+				77A8B0E81C247E1500A460E9 /* KCBannerContent.m in Sources */,
 				77639FF81C19CADA0004614D /* KCCursor.m in Sources */,
 				772E8DE81C0CA570006D42C8 /* CommController.m in Sources */,
+				77A8B0E71C247E1500A460E9 /* KCBannerAdInfo.m in Sources */,
 				77A7A0C61C2306FA00F365B1 /* KCCellManager.m in Sources */,
 				777217551C1130C4002A4F79 /* ConfigInfo.m in Sources */,
 				778767081C0DF61300BD5243 /* KCCreateController.m in Sources */,

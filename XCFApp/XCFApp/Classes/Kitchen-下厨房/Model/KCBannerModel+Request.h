@@ -1,14 +1,14 @@
 //
-//  KCModel+request.h
+//  KCBannerModel+Request.h
 //  XCFApp
 //
-//  Created by rkxt_ios on 15/12/8.
+//  Created by rkxt_ios on 15/12/19.
 //  Copyright © 2015年 ST. All rights reserved.
 //
 
-#import "KCModel.h"
+#import "KCBannerModel.h"
 
-@interface KCModel (request)
+@interface KCBannerModel (Request)
 + (void)requestWithCompletionBlock:(CompletionBlock)successBlock
                       failureBlock:(FailureBlock)failureBlock;
 @end

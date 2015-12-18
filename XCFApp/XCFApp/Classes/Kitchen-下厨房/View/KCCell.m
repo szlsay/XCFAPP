@@ -49,29 +49,32 @@ static const CGFloat WeightIcon = 50;
 {
     _manager = manager;
     
-    KCItems *items = manager.items;
+    // 1.设置数据
+    [self setDataWithItems:manager.items];
     
+    // 2.设置视图框架
+    [self setFrameWithManager:manager];
+    
+    // 3.设置UI
+    [self setUIWithItems:manager.items];
+}
+
+- (void)setDataWithItems:(KCItems *)items
+{
     self.pictureView.yy_imageURL = [NSURL URLWithString:items.contents.image.url];
     self.labelTitle1.text        = items.contents.title_1st;
     self.labelTitle2.text        = items.contents.title_2nd;
     self.iconView.yy_imageURL    = [NSURL URLWithString:items.contents.author.photo];
     
-    
-    NSMutableParagraphStyle *styleParagraph=[NSMutableParagraphStyle new];
-    styleParagraph.alignment     = NSTextAlignmentLeft;
-    styleParagraph.lineSpacing   = 3;
-    styleParagraph.lineBreakMode = NSLineBreakByTruncatingTail;
-    
-    NSDictionary * attributesDict=@{NSFontAttributeName:[UIFont systemFontOfSize:12],
-                                    NSForegroundColorAttributeName:[XCFColor colorTextNormal],
-                                    NSParagraphStyleAttributeName:styleParagraph};
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:[NSString stringWithRequestString:items.contents.desc defaultString:@""]
-                                                                                        attributes:attributesDict] ;
-    self.labelTitle.text         = items.contents.title;
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:[NSString stringWithRequestString:items.contents.desc defaultString:@""] attributes:[XCFAttributedDictionary attributedDictionaryContent]] ;
     self.labelDesc.attributedText= attributedString;
+    self.labelTitle.text         = items.contents.title;
     self.labelCook.text          = [NSString stringWithFormat:@"%g人做过", items.contents.n_cooked];
-    
-    
+}
+
+- (void)setFrameWithManager:(KCCellManager *)manager
+{
+    KCItems *items = manager.items;
     self.pictureView.frame  = manager.framePicture;
     self.pictureLayer.frame = self.pictureView.bounds;
     
@@ -92,8 +95,10 @@ static const CGFloat WeightIcon = 50;
     self.labelTitle.frame = manager.frameTitle;
     self.labelDesc.frame  = manager.frameDesc;
     self.labelCook.frame  = manager.frameCook;
-    
-    NSLog(@"%s, %ld", __FUNCTION__, (long)items.template);
+}
+
+- (void)setUIWithItems:(KCItems *)items
+{
     switch (items.template) {
         case 5:
             [self.iconView setHidden:NO];
@@ -105,6 +110,7 @@ static const CGFloat WeightIcon = 50;
             break;
     }
 }
+
 
 - (UILabel *)labelTitle1
 {

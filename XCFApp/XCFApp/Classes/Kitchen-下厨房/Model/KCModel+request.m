@@ -20,7 +20,6 @@ static NSString * const urlKC = @"http://api.xiachufang.com/v2/issues/list.json?
     [manager GET:urlKC
       parameters:nil
          success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-        NSLog(@"%s, %@", __FUNCTION__, responseObject);
              
         KCModel *model = [KCModel objectWithKeyValues:responseObject];
         
