@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 void ExtendNSLog(const char *file, int lineNumber, const char *functionName, NSString *format, ...);
+void STLog(const char *functionName, NSString *format, ...);
 
 @interface XCFLog : NSObject
 
@@ -16,13 +17,10 @@ void ExtendNSLog(const char *file, int lineNumber, const char *functionName, NSS
  *  NSLog仅在调试模式
  */
 #ifdef DEBUG
-#define XCFLog(args ...) ExtendNSLog(__FILE__, __LINE__, __PRETTY_FUNCTION__, args);
-#define XCFLogString [XCFLog logString]
-#define XCFLogClear  [XCFLog clearLog]
+
+#define XCFLog(args ...) STLog(__FUNCTION__, args)
 #else
 #define XCFLog(args ...)
-#define XCFLogString
-#define XCFLogClear
 #endif
 
 /**

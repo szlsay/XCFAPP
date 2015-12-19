@@ -182,9 +182,7 @@
     dispatch_group_enter(group);
     
     [KCBannerModel requestWithCompletionBlock:^(id returnValue) {
-        XCFLog(@"1234");
-        MJLog(@"3456");
-        NSLog(@"%s, %@", __FUNCTION__, returnValue);
+        XCFLog(@"%@", returnValue);
         dispatch_group_leave(group);
     } failureBlock:^(NSError *error) {
          dispatch_group_leave(group);

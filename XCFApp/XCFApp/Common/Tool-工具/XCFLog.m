@@ -37,6 +37,26 @@ void ExtendNSLog(const char *file, int lineNumber, const char *functionName, NSS
         logString = [NSString stringWithFormat:@"%@%@", logString, body];
 }
 
+void STLog(const char *functionName, NSString *format, ...)
+{
+    va_list ap;
+    
+    va_start (ap, format);
+    
+    if (![format hasSuffix: @"\n"])
+    {
+        format = [format stringByAppendingString: @"\n"];
+    }
+    
+    NSString *body = [[NSString alloc] initWithFormat:format
+                                            arguments:ap];
+    
+    va_end (ap);
+
+    fprintf(stderr, "(%s) %s", functionName, [body UTF8String]);
+}
+
+
 + (NSString *)logString
 {
     return logString;

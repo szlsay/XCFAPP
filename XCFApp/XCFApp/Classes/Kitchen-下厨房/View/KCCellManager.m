@@ -40,7 +40,7 @@
     CGFloat cookX = 0;
     CGFloat cookY = CGRectGetMaxY(_framePicture);
     CGFloat cookW = ScreenWidth - XCFMargin;
-    CGFloat cookH = 90;
+    CGFloat cookH = 75;
     _frameCook = CGRectMake(cookX, cookY, cookW, cookH);
     
     
