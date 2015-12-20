@@ -9,3 +9,4 @@ pod 'IQKeyboardManager', '~> 3.2.4'
 pod 'UMengAnalytics'#标准SDK，含IDFA(广告)
 pod 'UMengSocial', '~> 4.3'
 pod 'SDWebImage', '~>3.7'
+pod 'LxDBAnything', '~> 1.1.0'

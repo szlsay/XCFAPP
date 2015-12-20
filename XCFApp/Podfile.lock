@@ -21,6 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - IQKeyboardManager (3.2.4)
+  - LxDBAnything (1.1.0)
   - MBProgressHUD (0.9.1)
   - MJExtension (2.3.8)
   - MJRefresh (2.0.4)
@@ -35,6 +36,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - IQKeyboardManager (~> 3.2.4)
+  - LxDBAnything (~> 1.1.0)
   - MBProgressHUD (~> 0.9.1)
   - MJExtension (~> 2.3.6)
   - MJRefresh (~> 2.0.2)
@@ -47,6 +49,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
+  LxDBAnything: 154a2ad1ae32e70355d886b5443260543bb60c71
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJExtension: d83b55e6cb95c6274388539c782386b56f394a6d
   MJRefresh: ea153717001d3c02444bd22b75c111d2937d2104

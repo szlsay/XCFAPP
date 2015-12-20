@@ -28,6 +28,7 @@
 #import "KCCellManager.h"
 
 
+
 @interface KCController ()<UITableViewDataSource, UITableViewDelegate, UIViewControllerPreviewingDelegate, KCTouchControllerDelegate>
 
 @property (nonatomic, strong) NSArray<KCIssues *> *issues;
@@ -183,6 +184,9 @@
     
     [KCBannerModel requestWithCompletionBlock:^(id returnValue) {
         XCFLog(@"%@", returnValue);
+        CGSize size = CGSizeMake(87.6, 5.43);
+        LxDBAnyVar(size);
+        LxDBAnyVar(returnValue);
         dispatch_group_leave(group);
     } failureBlock:^(NSError *error) {
          dispatch_group_leave(group);
