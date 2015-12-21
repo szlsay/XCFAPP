@@ -1,6 +1,8 @@
 # XCFAPP
 高仿下厨房APP
 # 2015-12-21 
+## 查看我添加RAC的代码位置请使用 FIXME
+![image](https://github.com/STShenZhaoliang/XCFAPP/blob/master/Picture/RAC.png)
 添加大神讲的教程RAC，详细教程找码神吴彦祖
 最常用的几招：（死记硬背都能会的）
 target-action：
