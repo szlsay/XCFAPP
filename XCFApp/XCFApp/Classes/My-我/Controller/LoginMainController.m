@@ -120,11 +120,38 @@
                                                                         XCFControlSystemHeight)
                                                  placeholder:@"手机号"];
         [_textFieldAccount setKeyboardType:UIKeyboardTypeNumberPad];
-        [_textFieldAccount setDelegate:self];
-        [_textFieldAccount addTarget:self
-                              action:@selector(textFieldDidChange:)
-                    forControlEvents:UIControlEventEditingChanged];
         [_textFieldAccount setClearButtonMode:UITextFieldViewModeAlways];
+        [_textFieldAccount setDelegate:self];
+        
+        // FIXME : 2015-12-21 RAC - target action
+        
+//        [_textFieldAccount addTarget:self
+//                              action:@selector(textFieldDidChange:)
+//                    forControlEvents:UIControlEventEditingChanged];
+        
+        [[_textFieldAccount rac_textSignal] subscribeNext:^(NSString *text) {
+            CGRect loginFrame = self.buttonLogin.bounds;
+            
+            CGFloat length = self.buttonLogin.frame.size.width;
+            
+            CGFloat smallWidth = length / 11;
+            
+            loginFrame.origin.x += smallWidth * text.length;
+            
+            loginFrame.size.width -= smallWidth * text.length;
+            
+            self.buttonLayer.frame = loginFrame;
+            
+            
+            if (text.length == 11) {
+                [_textFieldAccount resignFirstResponder];
+                [self.buttonLogin setEnabled:YES];
+            }else {
+                [self.buttonLogin setEnabled:NO];
+            }
+
+        }];
+        
         
     }
     return _textFieldAccount;
@@ -159,9 +186,14 @@
         [_buttonLogin.layer setCornerRadius:4];
         [_buttonLogin setEnabled:NO];
         
-        [_buttonLogin addTarget:self
-                         action:@selector(login)
-               forControlEvents:UIControlEventTouchUpInside];
+        // FIXME : 2015-12-21 RAC - target action
+//        [_buttonLogin addTarget:self
+//                         action:@selector(login)
+//               forControlEvents:UIControlEventTouchUpInside];
+        
+        [[_buttonLogin rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+            LxPrintAnything(登录);
+        }];
     }
     return _buttonLogin;
 }

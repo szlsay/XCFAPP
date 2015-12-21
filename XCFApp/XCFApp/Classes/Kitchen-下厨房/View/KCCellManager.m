@@ -16,6 +16,7 @@
 {
     _items = items;
     
+    // 1.控件的高度
     CGFloat ratio = [items.contents.image.width doubleValue] / [items.contents.image.height doubleValue];
     CGFloat pictureW = ScreenWidth;
     CGFloat pictureH = ScreenWidth / ratio;
@@ -65,6 +66,7 @@
         _frameDesc = CGRectMake(descX, descY, descW, descH);
     }
     
+    // 2.Cell的高度
     switch (items.template) {
         case 1:
             _heightCell = CGRectGetMaxY(_frameDesc) + XCFMargin;

@@ -25,6 +25,13 @@ PODS:
   - MBProgressHUD (0.9.1)
   - MJExtension (2.3.8)
   - MJRefresh (2.0.4)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
@@ -40,6 +47,7 @@ DEPENDENCIES:
   - MBProgressHUD (~> 0.9.1)
   - MJExtension (~> 2.3.6)
   - MJRefresh (~> 2.0.2)
+  - ReactiveCocoa (= 2.5)
   - SDWebImage (~> 3.7)
   - TTTAttributedLabel (~> 1.13.4)
   - UMengAnalytics
@@ -53,6 +61,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJExtension: d83b55e6cb95c6274388539c782386b56f394a6d
   MJRefresh: ea153717001d3c02444bd22b75c111d2937d2104
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   UMengAnalytics: 4bf831415146b9c57cb10be65fbd43462ef8cf65

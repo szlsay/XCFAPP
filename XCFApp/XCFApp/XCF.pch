@@ -46,6 +46,7 @@ typedef void(^FailureBlock)(NSError *error);
 #import <UMSocial.h>
 #import <YYWebImage.h>
 #import <LxDBAnything.h>
+#import <ReactiveCocoa.h>
 
 
 #endif /* XCF_pch */

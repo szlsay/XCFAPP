@@ -28,11 +28,12 @@
     [super viewDidLoad];
     
     [self setupUI];
- }
+}
 
 #pragma mark - Delegate 视图委托
 
 #pragma mark - event response 事件相应
+
 - (void)closeBack
 {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -93,12 +94,15 @@
         [_buttonCancel setBordersWithColor:[XCFColor colorRedText]
                               cornerRadius:XCFControlSystemHeight/2
                                borderWidth:1];
-        
-        [_buttonCancel addTarget:self
-                          action:@selector(closeBack)
-                forControlEvents:UIControlEventTouchUpInside];
-        
-        
+        // FIXME : 2015-12-21 RAC - target action
+//        [_buttonCancel addTarget:self
+//                          action:@selector(closeBack)
+//                forControlEvents:UIControlEventTouchUpInside];
+        [[_buttonCancel rac_signalForControlEvents:UIControlEventTouchUpInside]
+         subscribeNext:^(id x) {
+             LxPrintAnything(返回);
+            [self dismissViewControllerAnimated:YES completion:nil];
+         }];
     }
     return _buttonCancel;
 }
@@ -110,14 +114,24 @@
                                                             0,
                                                             ScreenWidth-XCFControlNormalHeight,
                                                             XCFControlSystemHeight)
-                                    backgroundColor:RGB(249, 102, 80)
-                                              title:@"登录"
-                                         titleColor:[UIColor whiteColor]
-                                           fontSize:14];
+                                 backgroundColor:RGB(249, 102, 80)
+                                           title:@"登录"
+                                      titleColor:[UIColor whiteColor]
+                                        fontSize:14];
         [_buttonLogin.layer setCornerRadius:4];
-        [_buttonLogin addTarget:self
-                         action:@selector(gotoLoginMainVC)
-               forControlEvents:UIControlEventTouchUpInside];
+        // FIXME : 2015-12-21 RAC - target action
+        //        [_buttonLogin addTarget:self
+        //                         action:@selector(gotoLoginMainVC)
+        //               forControlEvents:UIControlEventTouchUpInside];
+        
+        [[_buttonLogin rac_signalForControlEvents:UIControlEventTouchUpInside]
+         subscribeNext:^(id x) {
+             LxPrintAnything(登录);
+             XCFNavController *nav = [[XCFNavController alloc]initWithRootViewController:[LoginMainController new]];
+             [self presentViewController:nav
+                                animated:YES
+                              completion:nil];
+         }];
     }
     return _buttonLogin;
 }
