@@ -36,14 +36,21 @@
     [self setSelectionStyle:UITableViewCellSelectionStyleNone];
 }
 
-- (void)awakeFromNib {
-    // Initialization code
-}
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    // FIXME : 统一修改系统Cell的下边线
+    
+    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull subView, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([subView isKindOfClass:NSClassFromString(@"_UITableViewCellSeparatorView")]) {
+            subView.x = 0;
+            subView.width = ScreenWidth;
+            subView.backgroundColor = [XCFColor colorTableSeparatorColor];
+        }
+    }];
+    
 }
 
 @end

@@ -26,4 +26,9 @@
     return button;
 }
 
+- (void)setHighlighted:(BOOL)highlighted
+{
+    
+}
+
 @end

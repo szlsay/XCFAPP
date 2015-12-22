@@ -50,4 +50,11 @@
     return RGBA(0, 0, 0, (255.0 - 191.0)/255);
 }
 
+
++ (UIColor *)colorTableSeparatorColor
+{
+    return RGB(236, 236, 236);
+}
+
+
 @end

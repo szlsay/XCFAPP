@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77061B0C1C280D4100554B49 /* KCBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 77061AFF1C280D4100554B49 /* KCBanner.m */; };
+		77061B0D1C280D4100554B49 /* KCBannerContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 77061B011C280D4100554B49 /* KCBannerContent.m */; };
+		77061B0E1C280D4100554B49 /* KCBannerNavs.m in Sources */ = {isa = PBXBuildFile; fileRef = 77061B031C280D4100554B49 /* KCBannerNavs.m */; };
+		77061B0F1C280D4100554B49 /* KCBannerPopEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 77061B051C280D4100554B49 /* KCBannerPopEvents.m */; };
+		77061B101C280D4100554B49 /* KCBannerCustomization.m in Sources */ = {isa = PBXBuildFile; fileRef = 77061B071C280D4100554B49 /* KCBannerCustomization.m */; };
+		77061B111C280D4100554B49 /* KCBannerDishes.m in Sources */ = {isa = PBXBuildFile; fileRef = 77061B091C280D4100554B49 /* KCBannerDishes.m */; };
+		77061B121C280D4100554B49 /* KCBannerEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 77061B0B1C280D4100554B49 /* KCBannerEvents.m */; };
+		77061B151C28151800554B49 /* KCBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77061B141C28151800554B49 /* KCBannerCell.m */; };
+		77061B181C284D1C00554B49 /* FeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77061B171C284D1C00554B49 /* FeedbackController.m */; };
 		77228FB61C11584800CBB493 /* LoginMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77228FB51C11584800CBB493 /* LoginMainController.m */; };
 		77228FB91C1161F600CBB493 /* XCFTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 77228FB81C1161F600CBB493 /* XCFTextField.m */; };
 		772E8D8B1C0C99EB006D42C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8D8A1C0C99EB006D42C8 /* main.m */; };
@@ -26,6 +35,10 @@
 		7744D2131C0E7C8600C97F85 /* XCFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744D2121C0E7C8600C97F85 /* XCFColor.m */; };
 		7744D2161C0E7DA200C97F85 /* UIColor+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744D2151C0E7DA200C97F85 /* UIColor+XCF.m */; };
 		7744D2191C0E849B00C97F85 /* UILabel+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744D2181C0E849B00C97F85 /* UILabel+XCF.m */; };
+		77619D051C28550200787971 /* HelpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77619D041C28550200787971 /* HelpController.m */; };
+		77619D081C285A3A00787971 /* FriendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77619D071C285A3A00787971 /* FriendController.m */; };
+		77619D0B1C285BBC00787971 /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77619D0A1C285BBC00787971 /* SettingController.m */; };
+		77619D0E1C285C4B00787971 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77619D0D1C285C4B00787971 /* SettingCell.m */; };
 		77639FF41C19CADA0004614D /* KCContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639FE71C19CADA0004614D /* KCContent.m */; };
 		77639FF51C19CADA0004614D /* KCIssues.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639FE91C19CADA0004614D /* KCIssues.m */; };
 		77639FF61C19CADA0004614D /* KCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77639FEB1C19CADA0004614D /* KCModel.m */; };
@@ -49,11 +62,7 @@
 		77A7A0C61C2306FA00F365B1 /* KCCellManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A7A0C51C2306FA00F365B1 /* KCCellManager.m */; };
 		77A7A0C91C23173300F365B1 /* NSString+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A7A0C81C23173300F365B1 /* NSString+XCF.m */; };
 		77A8B0DC1C24742800A460E9 /* XCFAttributedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B0DB1C24742800A460E9 /* XCFAttributedDictionary.m */; };
-		77A8B0E71C247E1500A460E9 /* KCBannerAdInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B0E01C247E1500A460E9 /* KCBannerAdInfo.m */; };
-		77A8B0E81C247E1500A460E9 /* KCBannerContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B0E21C247E1500A460E9 /* KCBannerContent.m */; };
-		77A8B0E91C247E1500A460E9 /* KCBannerImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B0E41C247E1500A460E9 /* KCBannerImage.m */; };
-		77A8B0EA1C247E1500A460E9 /* KCBannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B0E61C247E1500A460E9 /* KCBannerModel.m */; };
-		77A8B0ED1C247E5800A460E9 /* KCBannerModel+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B0EC1C247E5800A460E9 /* KCBannerModel+Request.m */; };
+		77A8B0ED1C247E5800A460E9 /* KCBanner+Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B0EC1C247E5800A460E9 /* KCBanner+Request.m */; };
 		77A8B0F01C24814B00A460E9 /* XCFLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B0EF1C24814B00A460E9 /* XCFLog.m */; };
 		77D61FC81C0D9011004441E9 /* XCFSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D61FC71C0D9011004441E9 /* XCFSearchBar.m */; };
 		77D61FD71C0DA342004441E9 /* UINavigationItem+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D61FD61C0DA342004441E9 /* UINavigationItem+XCF.m */; };
@@ -78,6 +87,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77061AFE1C280D4100554B49 /* KCBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBanner.h; sourceTree = "<group>"; };
+		77061AFF1C280D4100554B49 /* KCBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBanner.m; sourceTree = "<group>"; };
+		77061B001C280D4100554B49 /* KCBannerContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBannerContent.h; sourceTree = "<group>"; };
+		77061B011C280D4100554B49 /* KCBannerContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBannerContent.m; sourceTree = "<group>"; };
+		77061B021C280D4100554B49 /* KCBannerNavs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBannerNavs.h; sourceTree = "<group>"; };
+		77061B031C280D4100554B49 /* KCBannerNavs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBannerNavs.m; sourceTree = "<group>"; };
+		77061B041C280D4100554B49 /* KCBannerPopEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBannerPopEvents.h; sourceTree = "<group>"; };
+		77061B051C280D4100554B49 /* KCBannerPopEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBannerPopEvents.m; sourceTree = "<group>"; };
+		77061B061C280D4100554B49 /* KCBannerCustomization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBannerCustomization.h; sourceTree = "<group>"; };
+		77061B071C280D4100554B49 /* KCBannerCustomization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBannerCustomization.m; sourceTree = "<group>"; };
+		77061B081C280D4100554B49 /* KCBannerDishes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBannerDishes.h; sourceTree = "<group>"; };
+		77061B091C280D4100554B49 /* KCBannerDishes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBannerDishes.m; sourceTree = "<group>"; };
+		77061B0A1C280D4100554B49 /* KCBannerEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBannerEvents.h; sourceTree = "<group>"; };
+		77061B0B1C280D4100554B49 /* KCBannerEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBannerEvents.m; sourceTree = "<group>"; };
+		77061B131C28151800554B49 /* KCBannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBannerCell.h; sourceTree = "<group>"; };
+		77061B141C28151800554B49 /* KCBannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBannerCell.m; sourceTree = "<group>"; };
+		77061B161C284D1C00554B49 /* FeedbackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackController.h; sourceTree = "<group>"; };
+		77061B171C284D1C00554B49 /* FeedbackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackController.m; sourceTree = "<group>"; };
 		77228FB41C11584800CBB493 /* LoginMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginMainController.h; sourceTree = "<group>"; };
 		77228FB51C11584800CBB493 /* LoginMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginMainController.m; sourceTree = "<group>"; };
 		77228FB71C1161F600CBB493 /* XCFTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFTextField.h; sourceTree = "<group>"; };
@@ -119,6 +146,14 @@
 		7744D2151C0E7DA200C97F85 /* UIColor+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XCF.m"; sourceTree = "<group>"; };
 		7744D2171C0E849B00C97F85 /* UILabel+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+XCF.h"; sourceTree = "<group>"; };
 		7744D2181C0E849B00C97F85 /* UILabel+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+XCF.m"; sourceTree = "<group>"; };
+		77619D031C28550200787971 /* HelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpController.h; sourceTree = "<group>"; };
+		77619D041C28550200787971 /* HelpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpController.m; sourceTree = "<group>"; };
+		77619D061C285A3A00787971 /* FriendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendController.h; sourceTree = "<group>"; };
+		77619D071C285A3A00787971 /* FriendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendController.m; sourceTree = "<group>"; };
+		77619D091C285BBC00787971 /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		77619D0A1C285BBC00787971 /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		77619D0C1C285C4B00787971 /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
+		77619D0D1C285C4B00787971 /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
 		77639FE71C19CADA0004614D /* KCContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContent.m; sourceTree = "<group>"; };
 		77639FE81C19CADA0004614D /* KCIssues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCIssues.h; sourceTree = "<group>"; };
 		77639FE91C19CADA0004614D /* KCIssues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCIssues.m; sourceTree = "<group>"; };
@@ -164,16 +199,8 @@
 		77A7A0C81C23173300F365B1 /* NSString+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XCF.m"; sourceTree = "<group>"; };
 		77A8B0DA1C24742800A460E9 /* XCFAttributedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFAttributedDictionary.h; sourceTree = "<group>"; };
 		77A8B0DB1C24742800A460E9 /* XCFAttributedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFAttributedDictionary.m; sourceTree = "<group>"; };
-		77A8B0DF1C247E1500A460E9 /* KCBannerAdInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBannerAdInfo.h; sourceTree = "<group>"; };
-		77A8B0E01C247E1500A460E9 /* KCBannerAdInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBannerAdInfo.m; sourceTree = "<group>"; };
-		77A8B0E11C247E1500A460E9 /* KCBannerContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBannerContent.h; sourceTree = "<group>"; };
-		77A8B0E21C247E1500A460E9 /* KCBannerContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBannerContent.m; sourceTree = "<group>"; };
-		77A8B0E31C247E1500A460E9 /* KCBannerImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBannerImage.h; sourceTree = "<group>"; };
-		77A8B0E41C247E1500A460E9 /* KCBannerImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBannerImage.m; sourceTree = "<group>"; };
-		77A8B0E51C247E1500A460E9 /* KCBannerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCBannerModel.h; sourceTree = "<group>"; };
-		77A8B0E61C247E1500A460E9 /* KCBannerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCBannerModel.m; sourceTree = "<group>"; };
-		77A8B0EB1C247E5800A460E9 /* KCBannerModel+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KCBannerModel+Request.h"; sourceTree = "<group>"; };
-		77A8B0EC1C247E5800A460E9 /* KCBannerModel+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KCBannerModel+Request.m"; sourceTree = "<group>"; };
+		77A8B0EB1C247E5800A460E9 /* KCBanner+Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KCBanner+Request.h"; sourceTree = "<group>"; };
+		77A8B0EC1C247E5800A460E9 /* KCBanner+Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KCBanner+Request.m"; sourceTree = "<group>"; };
 		77A8B0EE1C24814B00A460E9 /* XCFLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFLog.h; sourceTree = "<group>"; };
 		77A8B0EF1C24814B00A460E9 /* XCFLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFLog.m; sourceTree = "<group>"; };
 		77D61FC61C0D9011004441E9 /* XCFSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFSearchBar.h; sourceTree = "<group>"; };
@@ -353,6 +380,10 @@
 			children = (
 				772E8DE61C0CA570006D42C8 /* CommController.h */,
 				772E8DE71C0CA570006D42C8 /* CommController.m */,
+				77061B161C284D1C00554B49 /* FeedbackController.h */,
+				77061B171C284D1C00554B49 /* FeedbackController.m */,
+				77619D031C28550200787971 /* HelpController.h */,
+				77619D041C28550200787971 /* HelpController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -412,6 +443,8 @@
 				777E8C4E1C18864A0057EF52 /* KCCell.m */,
 				77A7A0C41C2306FA00F365B1 /* KCCellManager.h */,
 				77A7A0C51C2306FA00F365B1 /* KCCellManager.m */,
+				77061B131C28151800554B49 /* KCBannerCell.h */,
+				77061B141C28151800554B49 /* KCBannerCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -435,6 +468,10 @@
 				779B927E1C1092DE00D9BAFF /* LoginController.m */,
 				77228FB41C11584800CBB493 /* LoginMainController.h */,
 				77228FB51C11584800CBB493 /* LoginMainController.m */,
+				77619D061C285A3A00787971 /* FriendController.h */,
+				77619D071C285A3A00787971 /* FriendController.m */,
+				77619D091C285BBC00787971 /* SettingController.h */,
+				77619D0A1C285BBC00787971 /* SettingController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -449,6 +486,8 @@
 		772E8DCC1C0CA16C006D42C8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				77619D0C1C285C4B00787971 /* SettingCell.h */,
+				77619D0D1C285C4B00787971 /* SettingCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -526,16 +565,22 @@
 		77A8B0DE1C247CDB00A460E9 /* KCBannerModel-上方广告Model */ = {
 			isa = PBXGroup;
 			children = (
-				77A8B0DF1C247E1500A460E9 /* KCBannerAdInfo.h */,
-				77A8B0E01C247E1500A460E9 /* KCBannerAdInfo.m */,
-				77A8B0E11C247E1500A460E9 /* KCBannerContent.h */,
-				77A8B0E21C247E1500A460E9 /* KCBannerContent.m */,
-				77A8B0E31C247E1500A460E9 /* KCBannerImage.h */,
-				77A8B0E41C247E1500A460E9 /* KCBannerImage.m */,
-				77A8B0E51C247E1500A460E9 /* KCBannerModel.h */,
-				77A8B0E61C247E1500A460E9 /* KCBannerModel.m */,
-				77A8B0EB1C247E5800A460E9 /* KCBannerModel+Request.h */,
-				77A8B0EC1C247E5800A460E9 /* KCBannerModel+Request.m */,
+				77061AFE1C280D4100554B49 /* KCBanner.h */,
+				77061AFF1C280D4100554B49 /* KCBanner.m */,
+				77061B001C280D4100554B49 /* KCBannerContent.h */,
+				77061B011C280D4100554B49 /* KCBannerContent.m */,
+				77061B021C280D4100554B49 /* KCBannerNavs.h */,
+				77061B031C280D4100554B49 /* KCBannerNavs.m */,
+				77061B041C280D4100554B49 /* KCBannerPopEvents.h */,
+				77061B051C280D4100554B49 /* KCBannerPopEvents.m */,
+				77061B061C280D4100554B49 /* KCBannerCustomization.h */,
+				77061B071C280D4100554B49 /* KCBannerCustomization.m */,
+				77061B081C280D4100554B49 /* KCBannerDishes.h */,
+				77061B091C280D4100554B49 /* KCBannerDishes.m */,
+				77061B0A1C280D4100554B49 /* KCBannerEvents.h */,
+				77061B0B1C280D4100554B49 /* KCBannerEvents.m */,
+				77A8B0EB1C247E5800A460E9 /* KCBanner+Request.h */,
+				77A8B0EC1C247E5800A460E9 /* KCBanner+Request.m */,
 			);
 			name = "KCBannerModel-上方广告Model";
 			sourceTree = "<group>";
@@ -640,7 +685,6 @@
 				TargetAttributes = {
 					772E8D851C0C99EB006D42C8 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = Z25J3BA353;
 					};
 					772E8D9E1C0C99EB006D42C8 = {
 						CreatedOnToolsVersion = 7.1;
@@ -754,37 +798,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				77639FF91C19CADA0004614D /* KCImage.m in Sources */,
-				77A8B0E91C247E1500A460E9 /* KCBannerImage.m in Sources */,
 				77228FB91C1161F600CBB493 /* XCFTextField.m in Sources */,
 				7784A3241C0D2A9700BC6C56 /* UIView+XCF.m in Sources */,
 				7744D2161C0E7DA200C97F85 /* UIColor+XCF.m in Sources */,
 				77639FF41C19CADA0004614D /* KCContent.m in Sources */,
 				772E8DD91C0CA3D9006D42C8 /* XCFNavController.m in Sources */,
-				77A8B0EA1C247E1500A460E9 /* KCBannerModel.m in Sources */,
 				7784A3211C0D2A2400BC6C56 /* UIBarButtonItem+XCF.m in Sources */,
 				777E8C4F1C18864A0057EF52 /* KCCell.m in Sources */,
+				77619D0E1C285C4B00787971 /* SettingCell.m in Sources */,
+				77619D051C28550200787971 /* HelpController.m in Sources */,
 				7744D2191C0E849B00C97F85 /* UILabel+XCF.m in Sources */,
 				7744D2131C0E7C8600C97F85 /* XCFColor.m in Sources */,
 				77639FF61C19CADA0004614D /* KCModel.m in Sources */,
+				77061B121C280D4100554B49 /* KCBannerEvents.m in Sources */,
 				772E8D8E1C0C99EB006D42C8 /* AppDelegate.m in Sources */,
-				77A8B0ED1C247E5800A460E9 /* KCBannerModel+Request.m in Sources */,
+				77061B181C284D1C00554B49 /* FeedbackController.m in Sources */,
+				77A8B0ED1C247E5800A460E9 /* KCBanner+Request.m in Sources */,
 				77A7A0C31C2300FD00F365B1 /* KCAuthor.m in Sources */,
 				772E8DE51C0CA54A006D42C8 /* BazController.m in Sources */,
+				77061B111C280D4100554B49 /* KCBannerDishes.m in Sources */,
 				774103A11C16CCDD00EA9FA9 /* KCModel+request.m in Sources */,
 				777217501C11245C002A4F79 /* UIButton+XCF.m in Sources */,
+				77061B0C1C280D4100554B49 /* KCBanner.m in Sources */,
 				77639FF71C19CADA0004614D /* KCContents.m in Sources */,
 				77445FE21C1A940E0001B6CC /* KCDetailController.m in Sources */,
 				77445FDF1C1A89C70001B6CC /* KCTouchController.m in Sources */,
 				77A8B0DC1C24742800A460E9 /* XCFAttributedDictionary.m in Sources */,
 				77A7A0C91C23173300F365B1 /* NSString+XCF.m in Sources */,
+				77061B0D1C280D4100554B49 /* KCBannerContent.m in Sources */,
 				77A8B0F01C24814B00A460E9 /* XCFLog.m in Sources */,
 				777E8C4C1C1884EA0057EF52 /* XCFCell.m in Sources */,
 				77D61FC81C0D9011004441E9 /* XCFSearchBar.m in Sources */,
-				77A8B0E81C247E1500A460E9 /* KCBannerContent.m in Sources */,
 				77639FF81C19CADA0004614D /* KCCursor.m in Sources */,
 				772E8DE81C0CA570006D42C8 /* CommController.m in Sources */,
-				77A8B0E71C247E1500A460E9 /* KCBannerAdInfo.m in Sources */,
 				77A7A0C61C2306FA00F365B1 /* KCCellManager.m in Sources */,
+				77061B0F1C280D4100554B49 /* KCBannerPopEvents.m in Sources */,
 				777217551C1130C4002A4F79 /* ConfigInfo.m in Sources */,
 				778767081C0DF61300BD5243 /* KCCreateController.m in Sources */,
 				77639FFA1C19CADA0004614D /* KCItems.m in Sources */,
@@ -793,8 +841,13 @@
 				77D61FD71C0DA342004441E9 /* UINavigationItem+XCF.m in Sources */,
 				778767051C0DEA8000BD5243 /* XCFBarButtonItem.m in Sources */,
 				779B927F1C1092DE00D9BAFF /* LoginController.m in Sources */,
+				77061B0E1C280D4100554B49 /* KCBannerNavs.m in Sources */,
 				772E8DE21C0CA537006D42C8 /* MyController.m in Sources */,
+				77061B151C28151800554B49 /* KCBannerCell.m in Sources */,
+				77619D0B1C285BBC00787971 /* SettingController.m in Sources */,
 				772E8DD61C0CA3AE006D42C8 /* XCFTabController.m in Sources */,
+				77619D081C285A3A00787971 /* FriendController.m in Sources */,
+				77061B101C280D4100554B49 /* KCBannerCustomization.m in Sources */,
 				772E8D8B1C0C99EB006D42C8 /* main.m in Sources */,
 				777217581C1135A1002A4F79 /* ConfigUI.m in Sources */,
 				772E8DD01C0CA23E006D42C8 /* KCController.m in Sources */,

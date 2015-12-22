@@ -1,21 +1,21 @@
 //
-//  KCBannerModel+Request.m
+//  KCBanner+Request.m
 //  XCFApp
 //
 //  Created by rkxt_ios on 15/12/19.
 //  Copyright © 2015年 ST. All rights reserved.
 //
 
-#import "KCBannerModel+Request.h"
-static NSString *const urlKCBanner = @"http://api.xiachufang.com/v2/ad/show.json?slot_name=homepage_banner_ad1&height=348&origin=iphone&api_sign=8ac2bab7d214931fb7d3a0cf78261f83&width=1392&sk=w6wLf9JUTDysdvaxDKoVJA&supported_types=1&version=5.1.1&api_key=0f9f79be1dac5f003e7de6f876b17c00";
-@implementation KCBannerModel (Request)
+#import "KCBanner+Request.h"
+static NSString *const urlKCBanner = @"http://api.xiachufang.com/v2/init_page_v5.json?timezone=Asia%2FShanghai&api_sign=65033093fc36d99e4fb35c7a75e496e1&api_key=0f9f79be1dac5f003e7de6f876b17c00&origin=iphone&version=5.1.1";
+@implementation KCBanner (Request)
 + (void)requestWithCompletionBlock:(CompletionBlock)successBlock
                       failureBlock:(FailureBlock)failureBlock{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:urlKCBanner
       parameters:nil
          success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-             KCBannerModel *model = [KCBannerModel objectWithKeyValues:responseObject];
+             KCBanner *model = [KCBanner objectWithKeyValues:responseObject];
              if ([model.status isEqualToString:@"ok"]) {
                  successBlock(model.content);
              }

@@ -17,6 +17,14 @@
 
 #pragma mark - lift cycle 生命周期
 
+
+- (void)loadView
+{
+    [super loadView];
+    [self.tabBar setTintColor:[UIColor redColor]];
+//    [self.tabBar setBarTintColor:[UIColor blueColor]];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,27 +39,43 @@
     self.delegate = self;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    NSLog(@"%s, %@", __FUNCTION__, self.tabBar.subviews);
+    
+    
+//    [self.tabBar setValue:[UIColor redColor] forKey:@"_UITabBarBackgroundView"];
+    
+    for (UIView *subView in self.tabBar.subviews) {
+        if ([subView isKindOfClass:NSClassFromString(@"_UITabBarBackgroundView")]) {
+            NSLog(@"%s, %@", __FUNCTION__, self);
+        }
+    }
+}
+
 #pragma mark - Delegate 视图委托
 
 #pragma mark - event response 事件相应
 
 // TODO 最好使用RAC，这里使用的控制器的标题
 
-- (BOOL)tabBarController:(UITabBarController *)tabBarController
-shouldSelectViewController:(UIViewController *)viewController
-{
-    UINavigationController *navVC = (UINavigationController *)viewController;
-    if ([navVC.viewControllers[0].title isEqualToString:@"我"]) {
-        
-        [self presentViewController:[LoginController new]
-                           animated:YES
-                         completion:nil];
-        
-        return NO;
-    }else {
-        return YES;
-    }
-}
+//- (BOOL)tabBarController:(UITabBarController *)tabBarController
+//shouldSelectViewController:(UIViewController *)viewController
+//{
+//    UINavigationController *navVC = (UINavigationController *)viewController;
+//    if ([navVC.viewControllers[0].title isEqualToString:@"我"]) {
+//        
+//        [self presentViewController:[LoginController new]
+//                           animated:YES
+//                         completion:nil];
+//        
+//        return NO;
+//    }else {
+//        return YES;
+//    }
+//}
 
 #pragma mark - private methods 私有方法
 

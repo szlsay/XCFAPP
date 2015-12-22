@@ -26,6 +26,7 @@ typedef void(^FailureBlock)(NSError *error);
 
 #pragma mark - 工具文件
 #import "XCFColor.h"
+#import "XCFSearchBar.h"
 #import "XCFBarButtonItem.h"
 #import "XCFTextField.h"
 #import "XCFAttributedDictionary.h"

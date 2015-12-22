@@ -55,4 +55,9 @@
  *  @return <#return value description#>
  */
 + (UIColor *)colorLayerPicture;
+
+/**
+ *  9.系统UITableView的边线颜色
+ */
++ (UIColor *)colorTableSeparatorColor;
 @end

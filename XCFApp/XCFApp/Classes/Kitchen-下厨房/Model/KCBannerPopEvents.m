@@ -1,18 +1,18 @@
 //
-//  KCBannerContent.m
+//  KCBannerPopEvents.m
 //  xiachufang
 //
 //  Created by rkxt_ios on 15/12/21
 //  Copyright (c) __ORGANIZATIONNAME__. All rights reserved.
 //
 
-#import "KCBannerContent.h"
-#import "KCBannerNavs.h"
+#import "KCBannerPopEvents.h"
+#import "KCBannerEvents.h"
 
-@implementation KCBannerContent
+@implementation KCBannerPopEvents
 MJLogAllIvars
 + (NSDictionary *)objectClassInArray{
-    return @{@"navs" : [KCBannerNavs class]};
+    return @{@"events" : [KCBannerEvents class]};
 }
 
 @end

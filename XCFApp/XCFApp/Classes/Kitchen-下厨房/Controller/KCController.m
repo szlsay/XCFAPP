@@ -21,7 +21,8 @@
 #import "KCModel+request.h"
 #import "KCIssues.h"
 #import "KCItems.h"
-#import "KCBannerModel+Request.h"
+//#import "KCBannerModel+Request.h"
+#import "KCBanner+Request.h"
 
 // 4.Cell视图
 #import "KCCell.h"
@@ -182,15 +183,22 @@
     dispatch_group_t group = dispatch_group_create();
     dispatch_group_enter(group);
     
-    [KCBannerModel requestWithCompletionBlock:^(id returnValue) {
-        XCFLog(@"%@", returnValue);
-        CGSize size = CGSizeMake(87.6, 5.43);
-        LxDBAnyVar(size);
+    [KCBanner requestWithCompletionBlock:^(id returnValue) {
         LxDBAnyVar(returnValue);
-        dispatch_group_leave(group);
+        NSLog(@"%s, %@", __FUNCTION__, returnValue);
     } failureBlock:^(NSError *error) {
-         dispatch_group_leave(group);
+        
     }];
+    
+//    [KCBannerModel requestWithCompletionBlock:^(id returnValue) {
+//        XCFLog(@"%@", returnValue);
+//        CGSize size = CGSizeMake(87.6, 5.43);
+//        LxDBAnyVar(size);
+//        LxDBAnyVar(returnValue);
+//        dispatch_group_leave(group);
+//    } failureBlock:^(NSError *error) {
+//         dispatch_group_leave(group);
+//    }];
 }
 #pragma mark - getters and setters 属性
 
