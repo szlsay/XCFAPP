@@ -2,13 +2,14 @@
 高仿下厨房APP
 # 2015-12-22 
 修改系统的UITableView的分割线
+
 [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull subView, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([subView isKindOfClass:NSClassFromString(@"_UITableViewCellSeparatorView")]) {
             subView.x = 0;
             subView.width = ScreenWidth;
             subView.backgroundColor = [XCFColor colorTableSeparatorColor];
         }
-    }];
+ }];
     
 # 2015-12-21 
 ## 查看我添加RAC的代码位置请使用 FIXME
