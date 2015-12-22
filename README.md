@@ -3,7 +3,7 @@
 # 2015-12-22 
 修改系统的UITableView的分割线
 
-[self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull subView, NSUInteger idx, BOOL * _Nonnull stop) {
+>>>>[self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull subView, NSUInteger idx, BOOL * _Nonnull stop) {
 >>>>        if ([subView isKindOfClass:NSClassFromString(@"_UITableViewCellSeparatorView")]) {
 >>>>             subView.x = 0;
 >>>>            subView.width = ScreenWidth;
