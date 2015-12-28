@@ -60,6 +60,7 @@
                                                                   ScreenWidth,
                                                                   ScreenHeight)
                                                  style:UITableViewStylePlain];
+        [_tableView setTableFooterView:[UIView new]];
         [_tableView setDelegate:self];
         [_tableView setDataSource:self];
         [_tableView setBackgroundColor:[XCFColor colorControllerBackground]];

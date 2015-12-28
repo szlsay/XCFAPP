@@ -21,12 +21,13 @@
 #import "KCModel+request.h"
 #import "KCIssues.h"
 #import "KCItems.h"
-//#import "KCBannerModel+Request.h"
 #import "KCBanner+Request.h"
+#import "KCBannerContent.h"
 
 // 4.Cell视图
 #import "KCCell.h"
 #import "KCCellManager.h"
+#import "KCBannerCell.h"
 
 
 
@@ -36,6 +37,7 @@
 
 @property (nonatomic, strong, nullable)UITableView *tableView; //
 @property (nonatomic, strong, nullable)NSMutableArray <KCItems *>* arrayItems; //
+@property (nonatomic, strong, nullable)KCBannerContent *bannerContent; //
 @end
 
 @implementation KCController
@@ -57,41 +59,53 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.arrayItems.count;
+    if (section == 0) {
+        return 1;
+    }else {
+        return self.arrayItems.count;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    KCCell *cell = [KCCell cellWithTableView:tableView];
-    KCCellManager *manager = [KCCellManager new];
-    [manager setItems:self.arrayItems[indexPath.row]];
-    [cell setManager:manager];
-    
-//    [self registerForPreviewingWithDelegate:self sourceView:cell];
-    
-    
-    return cell;
+    if (indexPath.section == 0) {
+        KCBannerCell *cell = [KCBannerCell cellWithTableView:tableView];
+        cell.bannerContent = self.bannerContent;
+        return cell;
+    }else {
+        KCCell *cell = [KCCell cellWithTableView:tableView];
+        KCCellManager *manager = [KCCellManager new];
+        [manager setItems:self.arrayItems[indexPath.row]];
+        [cell setManager:manager];
+        
+        //    [self registerForPreviewingWithDelegate:self sourceView:cell];
+        return cell;
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    KCItems *items = self.arrayItems[indexPath.row];
-//    KCDetailController *detailVC = [[KCDetailController alloc]init];
-//    detailVC.items = items;
-//    [self.navigationController pushViewController:detailVC
-//                                         animated:YES];
+    //    KCItems *items = self.arrayItems[indexPath.row];
+    //    KCDetailController *detailVC = [[KCDetailController alloc]init];
+    //    detailVC.items = items;
+    //    [self.navigationController pushViewController:detailVC
+    //                                         animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    KCCellManager *manager = [KCCellManager new];
-    [manager setItems:self.arrayItems[indexPath.row]];
-    return manager.heightCell;
+    if (indexPath.section == 0) {
+        return 80;
+    }else {
+        KCCellManager *manager = [KCCellManager new];
+        [manager setItems:self.arrayItems[indexPath.row]];
+        return manager.heightCell;
+    }
 }
 
 
@@ -103,11 +117,11 @@
 - (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location
 {
     
-//    KCCell *cell = (KCCell *)previewingContext.sourceView;
-//    
+    //    KCCell *cell = (KCCell *)previewingContext.sourceView;
+    //
     KCTouchController *touchVC = [[KCTouchController alloc]init];
-//    touchVC.items = cell.items;
-//    touchVC.delegate = self;
+    //    touchVC.items = cell.items;
+    //    touchVC.delegate = self;
     return touchVC;
 }
 
@@ -130,7 +144,7 @@
     
     // 2.添加导航按钮
     self.navigationItem.leftBarButtonItem = [XCFBarButtonItem barButtonItemWithImageName:@"homepageCreateRecipeButton"
-                                                                                     target:self
+                                                                                  target:self
                                                                                   action:@selector(gotoVC)];
     
     self.navigationItem.rightBarButtonItem = [XCFBarButtonItem barButtonItemWithImageName:@"buylistButtonImage"
@@ -162,7 +176,7 @@
         [self.issues enumerateObjectsUsingBlock:^(KCIssues * _Nonnull obj,
                                                   NSUInteger idx,
                                                   BOOL * _Nonnull stop) {
-
+            
             [obj.items enumerateObjectsUsingBlock:^(KCItems * _Nonnull obj,
                                                     NSUInteger idx,
                                                     BOOL * _Nonnull stop) {
@@ -179,26 +193,34 @@
 
 - (void)setupBanner
 {
-
+    
     dispatch_group_t group = dispatch_group_create();
     dispatch_group_enter(group);
     
     [KCBanner requestWithCompletionBlock:^(id returnValue) {
         LxDBAnyVar(returnValue);
-        NSLog(@"%s, %@", __FUNCTION__, returnValue);
+        self.bannerContent = returnValue;
+        dispatch_group_leave(group);
     } failureBlock:^(NSError *error) {
         
     }];
     
-//    [KCBannerModel requestWithCompletionBlock:^(id returnValue) {
-//        XCFLog(@"%@", returnValue);
-//        CGSize size = CGSizeMake(87.6, 5.43);
-//        LxDBAnyVar(size);
-//        LxDBAnyVar(returnValue);
-//        dispatch_group_leave(group);
-//    } failureBlock:^(NSError *error) {
-//         dispatch_group_leave(group);
-//    }];
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+//        [self.issues enumerateObjectsUsingBlock:^(KCIssues * _Nonnull obj,
+//                                                  NSUInteger idx,
+//                                                  BOOL * _Nonnull stop) {
+//            
+//            [obj.items enumerateObjectsUsingBlock:^(KCItems * _Nonnull obj,
+//                                                    NSUInteger idx,
+//                                                    BOOL * _Nonnull stop) {
+//                [self.arrayItems addObject:obj];
+//                
+//            }];
+//        }];
+        [self.tableView reloadData];
+    });
+
+    
 }
 #pragma mark - getters and setters 属性
 
@@ -218,6 +240,14 @@
         _arrayItems = [NSMutableArray array];
     }
     return _arrayItems;
+}
+
+- (KCBannerContent *)bannerContent
+{
+    if (!_bannerContent) {
+        _bannerContent = [[KCBannerContent alloc]init];
+    }
+    return _bannerContent;
 }
 
 

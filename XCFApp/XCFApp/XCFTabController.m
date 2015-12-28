@@ -61,21 +61,21 @@
 
 // TODO 最好使用RAC，这里使用的控制器的标题
 
-//- (BOOL)tabBarController:(UITabBarController *)tabBarController
-//shouldSelectViewController:(UIViewController *)viewController
-//{
-//    UINavigationController *navVC = (UINavigationController *)viewController;
-//    if ([navVC.viewControllers[0].title isEqualToString:@"我"]) {
-//        
-//        [self presentViewController:[LoginController new]
-//                           animated:YES
-//                         completion:nil];
-//        
-//        return NO;
-//    }else {
-//        return YES;
-//    }
-//}
+- (BOOL)tabBarController:(UITabBarController *)tabBarController
+shouldSelectViewController:(UIViewController *)viewController
+{
+    UINavigationController *navVC = (UINavigationController *)viewController;
+    if ([navVC.viewControllers[0].title isEqualToString:@"我"]) {
+        
+        [self presentViewController:[LoginController new]
+                           animated:YES
+                         completion:nil];
+        
+        return NO;
+    }else {
+        return YES;
+    }
+}
 
 #pragma mark - private methods 私有方法
 

@@ -47,6 +47,7 @@
         if ([subView isKindOfClass:NSClassFromString(@"_UITableViewCellSeparatorView")]) {
             subView.x = 0;
             subView.width = ScreenWidth;
+            subView.height = 1;
             subView.backgroundColor = [XCFColor colorTableSeparatorColor];
         }
     }];

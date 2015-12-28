@@ -7,7 +7,7 @@
 //
 
 #import "XCFCell.h"
-
+@class KCBannerContent;
 @interface KCBannerCell : XCFCell
-
+@property (nonatomic, strong, nullable)KCBannerContent *bannerContent; //
 @end
