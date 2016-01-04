@@ -4,11 +4,11 @@
 # 2016-01-04 
 添加单例
 >>static id instance_;
->> + (instancetype)sharedInstance{
->>>>static dispatch_once_t onceToken;
->>>>dispatch_once(&onceToken, ^{
->>>>instance_ = [[self alloc] init];
->>>>});
+>>>> + (instancetype)sharedInstance{
+>>>>	static dispatch_once_t onceToken;
+>>>>	dispatch_once(&onceToken, ^{
+>>>>	instance_ = [[self alloc] init];
+>>>>	});
 >>>>return instance_;
 >>}
 
