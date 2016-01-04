@@ -33,6 +33,7 @@
 		7742DAD91C39FF4F00434992 /* XCFNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742DAD81C39FF4F00434992 /* XCFNoDataView.m */; };
 		7742DADC1C3A022500434992 /* ConfigConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742DADB1C3A022500434992 /* ConfigConst.m */; };
 		7742DADF1C3A052A00434992 /* NSObject+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742DADE1C3A052A00434992 /* NSObject+XCF.m */; };
+		7742DAE21C3A24F900434992 /* XCFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742DAE11C3A24F900434992 /* XCFNetworking.m */; };
 		77445FDF1C1A89C70001B6CC /* KCTouchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77445FDE1C1A89C70001B6CC /* KCTouchController.m */; };
 		77445FE21C1A940E0001B6CC /* KCDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77445FE11C1A940E0001B6CC /* KCDetailController.m */; };
 		7744D2131C0E7C8600C97F85 /* XCFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744D2121C0E7C8600C97F85 /* XCFColor.m */; };
@@ -145,6 +146,8 @@
 		7742DADB1C3A022500434992 /* ConfigConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigConst.m; sourceTree = "<group>"; };
 		7742DADD1C3A052A00434992 /* NSObject+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XCF.h"; sourceTree = "<group>"; };
 		7742DADE1C3A052A00434992 /* NSObject+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XCF.m"; sourceTree = "<group>"; };
+		7742DAE01C3A24F900434992 /* XCFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFNetworking.h; sourceTree = "<group>"; };
+		7742DAE11C3A24F900434992 /* XCFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFNetworking.m; sourceTree = "<group>"; };
 		77445FDD1C1A89C70001B6CC /* KCTouchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTouchController.h; sourceTree = "<group>"; };
 		77445FDE1C1A89C70001B6CC /* KCTouchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCTouchController.m; sourceTree = "<group>"; };
 		77445FE01C1A940E0001B6CC /* KCDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCDetailController.h; sourceTree = "<group>"; };
@@ -617,6 +620,8 @@
 				77A8B0EF1C24814B00A460E9 /* XCFLog.m */,
 				7742DAD71C39FF4F00434992 /* XCFNoDataView.h */,
 				7742DAD81C39FF4F00434992 /* XCFNoDataView.m */,
+				7742DAE01C3A24F900434992 /* XCFNetworking.h */,
+				7742DAE11C3A24F900434992 /* XCFNetworking.m */,
 			);
 			path = "Tool-工具";
 			sourceTree = "<group>";
@@ -849,6 +854,7 @@
 				77D61FC81C0D9011004441E9 /* XCFSearchBar.m in Sources */,
 				77639FF81C19CADA0004614D /* KCCursor.m in Sources */,
 				772E8DE81C0CA570006D42C8 /* CommController.m in Sources */,
+				7742DAE21C3A24F900434992 /* XCFNetworking.m in Sources */,
 				77A7A0C61C2306FA00F365B1 /* KCCellManager.m in Sources */,
 				77061B0F1C280D4100554B49 /* KCBannerPopEvents.m in Sources */,
 				777217551C1130C4002A4F79 /* ConfigInfo.m in Sources */,

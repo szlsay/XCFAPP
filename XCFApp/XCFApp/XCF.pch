@@ -28,6 +28,8 @@
 #import "UIView+XCF.h"
 #import "UIColor+XCF.h"
 
+#import <UIKit+AFNetworking.h>
+
 #import "NSString+XCF.h"
 #import "NSObject+XCF.h"
 
