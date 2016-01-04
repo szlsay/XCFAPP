@@ -30,6 +30,9 @@
 		772E8DE51C0CA54A006D42C8 /* BazController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DE41C0CA54A006D42C8 /* BazController.m */; };
 		772E8DE81C0CA570006D42C8 /* CommController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772E8DE71C0CA570006D42C8 /* CommController.m */; };
 		774103A11C16CCDD00EA9FA9 /* KCModel+request.m in Sources */ = {isa = PBXBuildFile; fileRef = 774103A01C16CCDD00EA9FA9 /* KCModel+request.m */; };
+		7742DAD91C39FF4F00434992 /* XCFNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742DAD81C39FF4F00434992 /* XCFNoDataView.m */; };
+		7742DADC1C3A022500434992 /* ConfigConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742DADB1C3A022500434992 /* ConfigConst.m */; };
+		7742DADF1C3A052A00434992 /* NSObject+XCF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742DADE1C3A052A00434992 /* NSObject+XCF.m */; };
 		77445FDF1C1A89C70001B6CC /* KCTouchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77445FDE1C1A89C70001B6CC /* KCTouchController.m */; };
 		77445FE21C1A940E0001B6CC /* KCDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77445FE11C1A940E0001B6CC /* KCDetailController.m */; };
 		7744D2131C0E7C8600C97F85 /* XCFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744D2121C0E7C8600C97F85 /* XCFColor.m */; };
@@ -136,6 +139,12 @@
 		772E8DE91C0CABCA006D42C8 /* XCF.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCF.pch; sourceTree = "<group>"; };
 		7741039F1C16CCDD00EA9FA9 /* KCModel+request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KCModel+request.h"; sourceTree = "<group>"; };
 		774103A01C16CCDD00EA9FA9 /* KCModel+request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KCModel+request.m"; sourceTree = "<group>"; };
+		7742DAD71C39FF4F00434992 /* XCFNoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFNoDataView.h; sourceTree = "<group>"; };
+		7742DAD81C39FF4F00434992 /* XCFNoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFNoDataView.m; sourceTree = "<group>"; };
+		7742DADA1C3A022500434992 /* ConfigConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigConst.h; sourceTree = "<group>"; };
+		7742DADB1C3A022500434992 /* ConfigConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigConst.m; sourceTree = "<group>"; };
+		7742DADD1C3A052A00434992 /* NSObject+XCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XCF.h"; sourceTree = "<group>"; };
+		7742DADE1C3A052A00434992 /* NSObject+XCF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XCF.m"; sourceTree = "<group>"; };
 		77445FDD1C1A89C70001B6CC /* KCTouchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTouchController.h; sourceTree = "<group>"; };
 		77445FDE1C1A89C70001B6CC /* KCTouchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCTouchController.m; sourceTree = "<group>"; };
 		77445FE01C1A940E0001B6CC /* KCDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCDetailController.h; sourceTree = "<group>"; };
@@ -510,6 +519,8 @@
 				777217541C1130C4002A4F79 /* ConfigInfo.m */,
 				777217561C1135A1002A4F79 /* ConfigUI.h */,
 				777217571C1135A1002A4F79 /* ConfigUI.m */,
+				7742DADA1C3A022500434992 /* ConfigConst.h */,
+				7742DADB1C3A022500434992 /* ConfigConst.m */,
 			);
 			path = "Config-配置";
 			sourceTree = "<group>";
@@ -533,6 +544,8 @@
 				7772174F1C11245C002A4F79 /* UIButton+XCF.m */,
 				77A7A0C71C23173300F365B1 /* NSString+XCF.h */,
 				77A7A0C81C23173300F365B1 /* NSString+XCF.m */,
+				7742DADD1C3A052A00434992 /* NSObject+XCF.h */,
+				7742DADE1C3A052A00434992 /* NSObject+XCF.m */,
 			);
 			path = "Category-类别";
 			sourceTree = "<group>";
@@ -602,6 +615,8 @@
 				777E8C4B1C1884EA0057EF52 /* XCFCell.m */,
 				77A8B0EE1C24814B00A460E9 /* XCFLog.h */,
 				77A8B0EF1C24814B00A460E9 /* XCFLog.m */,
+				7742DAD71C39FF4F00434992 /* XCFNoDataView.h */,
+				7742DAD81C39FF4F00434992 /* XCFNoDataView.m */,
 			);
 			path = "Tool-工具";
 			sourceTree = "<group>";
@@ -800,6 +815,7 @@
 				77639FF91C19CADA0004614D /* KCImage.m in Sources */,
 				77228FB91C1161F600CBB493 /* XCFTextField.m in Sources */,
 				7784A3241C0D2A9700BC6C56 /* UIView+XCF.m in Sources */,
+				7742DADF1C3A052A00434992 /* NSObject+XCF.m in Sources */,
 				7744D2161C0E7DA200C97F85 /* UIColor+XCF.m in Sources */,
 				77639FF41C19CADA0004614D /* KCContent.m in Sources */,
 				772E8DD91C0CA3D9006D42C8 /* XCFNavController.m in Sources */,
@@ -811,6 +827,7 @@
 				7744D2131C0E7C8600C97F85 /* XCFColor.m in Sources */,
 				77639FF61C19CADA0004614D /* KCModel.m in Sources */,
 				77061B121C280D4100554B49 /* KCBannerEvents.m in Sources */,
+				7742DADC1C3A022500434992 /* ConfigConst.m in Sources */,
 				772E8D8E1C0C99EB006D42C8 /* AppDelegate.m in Sources */,
 				77061B181C284D1C00554B49 /* FeedbackController.m in Sources */,
 				77A8B0ED1C247E5800A460E9 /* KCBanner+Request.m in Sources */,
@@ -826,6 +843,7 @@
 				77A8B0DC1C24742800A460E9 /* XCFAttributedDictionary.m in Sources */,
 				77A7A0C91C23173300F365B1 /* NSString+XCF.m in Sources */,
 				77061B0D1C280D4100554B49 /* KCBannerContent.m in Sources */,
+				7742DAD91C39FF4F00434992 /* XCFNoDataView.m in Sources */,
 				77A8B0F01C24814B00A460E9 /* XCFLog.m in Sources */,
 				777E8C4C1C1884EA0057EF52 /* XCFCell.m in Sources */,
 				77D61FC81C0D9011004441E9 /* XCFSearchBar.m in Sources */,

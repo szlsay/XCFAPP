@@ -9,20 +9,10 @@
 #ifndef XCF_pch
 #define XCF_pch
 
-@import Foundation;
-
-#define ScreenWidth  CGRectGetWidth([UIScreen mainScreen].bounds)
-#define ScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
-
-#define APPVERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
-
-
-typedef void(^CompletionBlock)(id returnValue);
-typedef void(^FailureBlock)(NSError *error);
-
 #pragma mark - 配置文件
 #import "ConfigInfo.h"
 #import "ConfigUI.h"
+#import "ConfigConst.h"
 
 #pragma mark - 工具文件
 #import "XCFColor.h"
@@ -39,6 +29,7 @@ typedef void(^FailureBlock)(NSError *error);
 #import "UIColor+XCF.h"
 
 #import "NSString+XCF.h"
+#import "NSObject+XCF.h"
 
 #pragma mark - Pod添加文件
 #import <AFNetworking.h>

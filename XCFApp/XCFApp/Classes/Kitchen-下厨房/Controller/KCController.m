@@ -29,6 +29,7 @@
 #import "KCCellManager.h"
 #import "KCBannerCell.h"
 
+#import "XCFNoDataView.h"
 
 
 @interface KCController ()<UITableViewDataSource, UITableViewDelegate, UIViewControllerPreviewingDelegate, KCTouchControllerDelegate>
@@ -49,9 +50,9 @@
     [super viewDidLoad];
     
     [self setupUI];
-    
+
     [self setupData];
-    
+
     [self setupBanner];
 }
 
@@ -165,7 +166,9 @@
     [KCModel requestWithCompletionBlock:^(id returnValue) {
         self.issues = returnValue;
         dispatch_group_leave(group);
+        RemoveNoDataView;
     } failureBlock:^(NSError *error) {
+        ShowNoDataView([self setupData]);
         dispatch_group_leave(group);
         
     }];
