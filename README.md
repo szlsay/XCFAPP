@@ -9,8 +9,8 @@
 >>>>	dispatch_once(&onceToken, ^{
 >>>>	instance_ = [[self alloc] init];
 >>>>	});
->>>>return instance_;
->>}
+>>>>	return instance_;
+>>	}
 
 # 2015-12-22 
 修改系统的UITableView的分割线
